@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Transform query parameters into an OpenIDRequest. query should contain the query parameters as a Hash with each key mapping to one value.
+- !ruby/struct:SM::Flow::P 
+  body: If the query does not seem to be an OpenID request at all, I return nil.
+full_name: OpenID::Server::Server#decode_request
+is_singleton: false
+name: decode_request
+params: (query)
+visibility: public

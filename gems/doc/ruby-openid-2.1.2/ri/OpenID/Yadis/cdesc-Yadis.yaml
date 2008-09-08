@@ -1,0 +1,77 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: apply_filter
+- !ruby/object:RI::MethodSummary 
+  name: discover
+- !ruby/object:RI::MethodSummary 
+  name: each_service
+- !ruby/object:RI::MethodSummary 
+  name: expand_service
+- !ruby/object:RI::MethodSummary 
+  name: generate_accept_header
+- !ruby/object:RI::MethodSummary 
+  name: get_acceptable
+- !ruby/object:RI::MethodSummary 
+  name: get_canonical_id
+- !ruby/object:RI::MethodSummary 
+  name: get_service_endpoints
+- !ruby/object:RI::MethodSummary 
+  name: get_yadis_xrd
+- !ruby/object:RI::MethodSummary 
+  name: html_yadis_location
+- !ruby/object:RI::MethodSummary 
+  name: is_xrds?
+- !ruby/object:RI::MethodSummary 
+  name: make_filter
+- !ruby/object:RI::MethodSummary 
+  name: match_types
+- !ruby/object:RI::MethodSummary 
+  name: mk_compound_filter
+- !ruby/object:RI::MethodSummary 
+  name: parseXRDS
+- !ruby/object:RI::MethodSummary 
+  name: parse_accept_header
+- !ruby/object:RI::MethodSummary 
+  name: prio_sort
+- !ruby/object:RI::MethodSummary 
+  name: services
+- !ruby/object:RI::MethodSummary 
+  name: where_is_yadis?
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: YADIS_HEADER_NAME
+  value: "'X-XRDS-Location'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: YADIS_CONTENT_TYPE
+  value: "'application/xrds+xml'"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: A value suitable for using as an accept header when performing YADIS discovery, unless the application has special requirements
+  name: YADIS_ACCEPT_HEADER
+  value: generate_accept_header(                                                  ['text/html', 0.3],                                                  ['application/xhtml+xml', 0.5],                                                  [YADIS_CONTENT_TYPE, 1.0]
+- !ruby/object:RI::Constant 
+  comment: 
+  name: XRD_NS_2_0
+  value: "'xri://$xrd*($v*2.0)'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: XRDS_NS
+  value: "'xri://$xrds'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: XRDS_NAMESPACES
+  value: "{       'xrds' => XRDS_NS,       'xrd' => XRD_NS_2_0,     }"
+full_name: OpenID::Yadis
+includes: []
+
+instance_methods: []
+
+name: Yadis
+superclass: 

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: HMAC::Base#reset_key
+is_singleton: false
+name: reset_key
+params: ()
+visibility: public

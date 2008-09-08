@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: retrieve the list of values for this attribute
+full_name: OpenID::AX::KeyValueMessage#get
+is_singleton: false
+name: get
+params: (type_uri)
+visibility: public

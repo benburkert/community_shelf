@@ -1,0 +1,35 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Construct me from an OpenID message.
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "message:"
+    body: An OpenID checkid_* request Message
+  - !ruby/struct:SM::Flow::LI 
+    label: "op_endpoint:"
+    body: The endpoint URL of the server that this message was sent to.
+  type: :NOTE
+- !ruby/struct:SM::Flow::P 
+  body: "Raises:"
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "ProtocolError:"
+    body: When not all required parameters are present in the message.
+  - !ruby/struct:SM::Flow::LI 
+    label: "MalformedReturnURL:"
+    body: When the <tt>return_to</tt> URL is not a URL.
+  - !ruby/struct:SM::Flow::LI 
+    label: "UntrustedReturnURL:"
+    body: When the <tt>return_to</tt> URL is outside the <tt>trust_root</tt>.
+  type: :NOTE
+full_name: OpenID::Server::CheckIDRequest::from_message
+is_singleton: true
+name: from_message
+params: (message, op_endpoint)
+visibility: public

@@ -1,0 +1,35 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: mode
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: ns_alias
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: ns_uri
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Abstract class containing common code for attribute exchange messages
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: NS_URI
+  value: "'http://openid.net/srv/ax/1.0'"
+full_name: OpenID::AX::AXMessage
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: check_mode
+- !ruby/object:RI::MethodSummary 
+  name: new_args
+name: AXMessage
+superclass: Extension

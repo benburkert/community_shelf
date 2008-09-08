@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Look at the next token, but don't actually grab it
+full_name: HTMLTokenizer#peekNextToken
+is_singleton: false
+name: peekNextToken
+params: ()
+visibility: public

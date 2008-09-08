@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Store an association in the assoc directory
+full_name: OpenID::Store::Filesystem#store_association
+is_singleton: false
+name: store_association
+params: (server_url, association)
+visibility: public

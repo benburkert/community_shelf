@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::OpenIDServiceEndpoint#is_op_identifier
+is_singleton: false
+name: is_op_identifier
+params: ()
+visibility: public

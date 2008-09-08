@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Respond to this request.
+- !ruby/struct:SM::Flow::P 
+  body: Given a Signatory, I can check the validity of the signature and the invalidate_handle. I return a response with an is_valid (and, if appropriate invalidate_handle) field.
+full_name: OpenID::Server::CheckAuthRequest#answer
+is_singleton: false
+name: answer
+params: (signatory)
+visibility: public

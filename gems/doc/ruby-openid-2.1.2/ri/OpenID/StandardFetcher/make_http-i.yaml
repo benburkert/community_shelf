@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::StandardFetcher#make_http
+is_singleton: false
+name: make_http
+params: (uri)
+visibility: public

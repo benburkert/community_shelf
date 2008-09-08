@@ -1,0 +1,30 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: DATA_FIELDS
+  value: "{       'fullname'=>'Full Name',       'nickname'=>'Nickname',       'dob'=>'Date of Birth',       'email'=>'E-mail Address',       'gender'=>'Gender',       'postcode'=>'Postal Code',       'country'=>'Country',       'language'=>'Language',       'timezone'=>'Time Zone',     }"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: NS_URI_1_0
+  value: "'http://openid.net/sreg/1.0'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: NS_URI_1_1
+  value: "'http://openid.net/extensions/sreg/1.1'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: NS_URI
+  value: NS_URI_1_1
+full_name: OpenID::SReg
+includes: []
+
+instance_methods: []
+
+name: SReg
+superclass: 

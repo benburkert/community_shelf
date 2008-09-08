@@ -1,0 +1,43 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: OpenID::Store::Filesystem
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: _get_association
+- !ruby/object:RI::MethodSummary 
+  name: cleanup
+- !ruby/object:RI::MethodSummary 
+  name: cleanup_associations
+- !ruby/object:RI::MethodSummary 
+  name: cleanup_nonces
+- !ruby/object:RI::MethodSummary 
+  name: ensure_dir
+- !ruby/object:RI::MethodSummary 
+  name: filename_escape
+- !ruby/object:RI::MethodSummary 
+  name: get_association
+- !ruby/object:RI::MethodSummary 
+  name: get_association_filename
+- !ruby/object:RI::MethodSummary 
+  name: mktemp
+- !ruby/object:RI::MethodSummary 
+  name: remove_association
+- !ruby/object:RI::MethodSummary 
+  name: remove_if_present
+- !ruby/object:RI::MethodSummary 
+  name: safe64
+- !ruby/object:RI::MethodSummary 
+  name: store_association
+- !ruby/object:RI::MethodSummary 
+  name: use_nonce
+name: Filesystem
+superclass: Interface

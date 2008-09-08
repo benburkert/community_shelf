@@ -1,0 +1,40 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: requested_attributes
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: update_url
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_openid_request
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An attribute exchange 'fetch_request' message. This message is sent by a relying party when it wishes to obtain attributes about the subject of an OpenID authentication request.
+constants: []
+
+full_name: OpenID::AX::FetchRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: add
+- !ruby/object:RI::MethodSummary 
+  name: attributes
+- !ruby/object:RI::MethodSummary 
+  name: get_extension_args
+- !ruby/object:RI::MethodSummary 
+  name: get_required_attrs
+- !ruby/object:RI::MethodSummary 
+  name: member?
+- !ruby/object:RI::MethodSummary 
+  name: parse_extension_args
+- !ruby/object:RI::MethodSummary 
+  name: requested_types
+name: FetchRequest
+superclass: AXMessage

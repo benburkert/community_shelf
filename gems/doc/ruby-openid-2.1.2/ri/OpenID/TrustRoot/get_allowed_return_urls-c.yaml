@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Given a relying party discovery URL return a list of return_to URLs.
+full_name: OpenID::TrustRoot::get_allowed_return_urls
+is_singleton: true
+name: get_allowed_return_urls
+params: (relying_party_url)
+visibility: public

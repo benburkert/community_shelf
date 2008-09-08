@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::OpenIDServiceEndpoint#uses_extension
+is_singleton: false
+name: uses_extension
+params: (extension_uri)
+visibility: public

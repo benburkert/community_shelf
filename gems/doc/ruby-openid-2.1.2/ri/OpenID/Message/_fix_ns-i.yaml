@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Convert an input value into the internally used values of this obejct.
+full_name: OpenID::Message#_fix_ns
+is_singleton: false
+name: _fix_ns
+params: (namespace)
+visibility: public

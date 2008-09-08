@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#handle_idres
+is_singleton: false
+name: handle_idres
+params: (message, current_url)
+visibility: protected

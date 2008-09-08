@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Note this is not not idempotent, so do not apply this more than once. XRI Syntax section 2.3.2
+full_name: OpenID::Yadis::XRI::escape_for_iri
+is_singleton: true
+name: escape_for_iri
+params: (xri)
+visibility: public

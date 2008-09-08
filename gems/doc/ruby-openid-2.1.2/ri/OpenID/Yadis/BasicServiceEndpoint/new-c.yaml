@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generic endpoint object that contains parsed service information, as well as a reference to the service element from which it was generated. If there is more than one xrd:Type or xrd:URI in the xrd:Service, this object represents just one of those pairs.
+- !ruby/struct:SM::Flow::P 
+  body: This object can be used as a filter, because it implements fromBasicServiceEndpoint.
+- !ruby/struct:SM::Flow::P 
+  body: The simplest kind of filter you can write implements fromBasicServiceEndpoint, which takes one of these objects.
+full_name: OpenID::Yadis::BasicServiceEndpoint::new
+is_singleton: true
+name: new
+params: (yadis_url, type_uris, uri, service_element)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Get a tag from the specified set of desired tags. For example: <tt>foo = toke.getTag(&quot;h1&quot;, &quot;h2&quot;, &quot;h3&quot;)</tt> Will return the next header tag encountered."
+full_name: HTMLTokenizer#getTag
+is_singleton: false
+name: getTag
+params: (*sought_tags)
+visibility: public

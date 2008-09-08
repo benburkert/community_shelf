@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Exceptions that are raised by the library are subclasses of this exception type, so if you want to catch all exceptions raised by the library, you can catch OpenIDError
+constants: []
+
+full_name: OpenID::OpenIDError
+includes: []
+
+instance_methods: []
+
+name: OpenIDError
+superclass: StandardError

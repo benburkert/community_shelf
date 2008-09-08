@@ -1,0 +1,32 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: allowed_types
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: check_session_type
+- !ruby/object:RI::MethodSummary 
+  name: get_session_types
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: OpenID::AssociationNegotiator
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: add_allowed_type
+- !ruby/object:RI::MethodSummary 
+  name: allowed?
+- !ruby/object:RI::MethodSummary 
+  name: allowed_types=
+- !ruby/object:RI::MethodSummary 
+  name: copy
+- !ruby/object:RI::MethodSummary 
+  name: get_allowed_type
+name: AssociationNegotiator
+superclass: Object

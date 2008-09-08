@@ -1,0 +1,18 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: If the endpoint is a relying party OpenID return_to endpoint, return the endpoint URL. Otherwise, return None.
+- !ruby/struct:SM::Flow::P 
+  body: This function is intended to be used as a filter for the Yadis filtering interface.
+- !ruby/struct:SM::Flow::P 
+  body: "endpoint: An XRDS BasicServiceEndpoint, as returned by performing Yadis dicovery."
+- !ruby/struct:SM::Flow::P 
+  body: returns the endpoint URL or None if the endpoint is not a relying party endpoint.
+full_name: OpenID::TrustRoot::_extract_return_url
+is_singleton: true
+name: _extract_return_url
+params: (endpoint)
+visibility: public

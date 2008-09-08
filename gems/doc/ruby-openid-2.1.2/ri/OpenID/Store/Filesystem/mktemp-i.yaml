@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Create a temporary file and return the File object and filename.
+full_name: OpenID::Store::Filesystem#mktemp
+is_singleton: false
+name: mktemp
+params: ()
+visibility: protected

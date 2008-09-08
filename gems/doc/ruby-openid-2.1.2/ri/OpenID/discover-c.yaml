@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::discover
+is_singleton: true
+name: discover
+params: (identifier)
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Store::Memory#cleanup_nonces
+is_singleton: false
+name: cleanup_nonces
+params: ()
+visibility: public

@@ -1,0 +1,79 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: For XRI, the persistent identifier.
+  name: canonical_id
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: the verified identifier.
+  name: claimed_id
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: local_id
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: server_url
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: type_uris
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: used_yadis
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_basic_service_endpoint
+- !ruby/object:RI::MethodSummary 
+  name: from_discovery_result
+- !ruby/object:RI::MethodSummary 
+  name: from_html
+- !ruby/object:RI::MethodSummary 
+  name: from_op_endpoint_url
+- !ruby/object:RI::MethodSummary 
+  name: from_xrds
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Object representing an OpenID service endpoint.
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: OpenID service type URIs, listed in order of preference. The ordering of this list affects yadis and XRI service discovery.
+  name: OPENID_TYPE_URIS
+  value: "[         OPENID_IDP_2_0_TYPE,          OPENID_2_0_TYPE,         OPENID_1_1_TYPE,         OPENID_1_0_TYPE,         ]"
+full_name: OpenID::OpenIDServiceEndpoint
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: compatibility_mode
+- !ruby/object:RI::MethodSummary 
+  name: display_identifier
+- !ruby/object:RI::MethodSummary 
+  name: display_identifier=
+- !ruby/object:RI::MethodSummary 
+  name: get_local_id
+- !ruby/object:RI::MethodSummary 
+  name: is_op_identifier
+- !ruby/object:RI::MethodSummary 
+  name: parse_service
+- !ruby/object:RI::MethodSummary 
+  name: preferred_namespace
+- !ruby/object:RI::MethodSummary 
+  name: supports_type
+- !ruby/object:RI::MethodSummary 
+  name: to_s
+- !ruby/object:RI::MethodSummary 
+  name: uses_extension
+name: OpenIDServiceEndpoint
+superclass: Object

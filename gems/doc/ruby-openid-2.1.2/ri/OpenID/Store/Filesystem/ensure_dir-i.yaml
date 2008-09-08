@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: ensure that a path exists
+full_name: OpenID::Store::Filesystem#ensure_dir
+is_singleton: false
+name: ensure_dir
+params: (dir_name)
+visibility: protected

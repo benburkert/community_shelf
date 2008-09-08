@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Add a signature (and a signed list) to a message.
+full_name: OpenID::Association#sign_message
+is_singleton: false
+name: sign_message
+params: (message)
+visibility: public

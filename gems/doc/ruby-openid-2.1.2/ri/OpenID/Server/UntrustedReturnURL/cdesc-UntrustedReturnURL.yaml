@@ -1,0 +1,26 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: return_to
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: trust_root
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A return_to is outside the trust_root.
+constants: []
+
+full_name: OpenID::Server::UntrustedReturnURL
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: to_s
+name: UntrustedReturnURL
+superclass: ProtocolError

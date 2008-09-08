@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Given a list of authentication policy URIs that a provider supports, this method returns the subset of those types that are preferred by the relying party.
+full_name: OpenID::PAPE::Request#preferred_types
+is_singleton: false
+name: preferred_types
+params: (supported_types)
+visibility: public

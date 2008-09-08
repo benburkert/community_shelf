@@ -1,0 +1,38 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: generator
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: modulus
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: public
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_defaults
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Encapsulates a Diffie-Hellman key exchange. This class is used internally by both the consumer and server objects.
+- !ruby/struct:SM::Flow::P 
+  body: "Read more about Diffie-Hellman on wikipedia: http://en.wikipedia.org/wiki/Diffie-Hellman"
+constants: []
+
+full_name: OpenID::DiffieHellman
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: get_shared_secret
+- !ruby/object:RI::MethodSummary 
+  name: using_default_values?
+- !ruby/object:RI::MethodSummary 
+  name: xor_secret
+name: DiffieHellman
+superclass: Object

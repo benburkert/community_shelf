@@ -1,0 +1,46 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: contact
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The query that is failing to be a valid OpenID request.
+  name: openid_message
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: reference
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A message did not conform to the OpenID protocol.
+constants: []
+
+full_name: OpenID::Server::ProtocolError
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: encode_to_kvform
+- !ruby/object:RI::MethodSummary 
+  name: encode_to_url
+- !ruby/object:RI::MethodSummary 
+  name: get_return_to
+- !ruby/object:RI::MethodSummary 
+  name: has_return_to
+- !ruby/object:RI::MethodSummary 
+  name: to_form_markup
+- !ruby/object:RI::MethodSummary 
+  name: to_html
+- !ruby/object:RI::MethodSummary 
+  name: to_message
+- !ruby/object:RI::MethodSummary 
+  name: which_encoding
+name: ProtocolError
+superclass: Exception

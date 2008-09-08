@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::XRI::provider_is_authoritative
+is_singleton: true
+name: provider_is_authoritative
+params: (provider_id, canonical_id)
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::get_yadis_xrd
+is_singleton: true
+name: get_yadis_xrd
+params: (xrds_tree)
+visibility: public

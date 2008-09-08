@@ -1,0 +1,18 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Does the relying party publish the return_to URL for this response under the realm? It is up to the provider to set a policy for what kinds of realms should be allowed. This return_to URL verification reduces vulnerability to data-theft attacks based on open proxies, corss-site-scripting, or open redirectors.
+- !ruby/struct:SM::Flow::P 
+  body: This check should only be performed after making sure that the return_to URL matches the realm.
+- !ruby/struct:SM::Flow::P 
+  body: Raises DiscoveryFailure if the realm URL does not support Yadis discovery (and so does not support the verification process).
+- !ruby/struct:SM::Flow::P 
+  body: Returns true if the realm publishes a document with the return_to URL listed
+full_name: OpenID::Server::CheckIDRequest#return_to_verified
+is_singleton: false
+name: return_to_verified
+params: ()
+visibility: public

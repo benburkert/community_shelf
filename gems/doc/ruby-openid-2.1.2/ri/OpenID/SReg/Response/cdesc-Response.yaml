@@ -1,0 +1,34 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: data
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: ns_uri
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: extract_response
+- !ruby/object:RI::MethodSummary 
+  name: from_success_response
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Represents the data returned in a simple registration response inside of an OpenID id_res response. This object will be created by the OpenID server, added to the id_res response object, and then extracted from the id_res message by the Consumer.
+constants: []
+
+full_name: OpenID::SReg::Response
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RI::MethodSummary 
+  name: empty?
+- !ruby/object:RI::MethodSummary 
+  name: get_extension_args
+name: Response
+superclass: Extension

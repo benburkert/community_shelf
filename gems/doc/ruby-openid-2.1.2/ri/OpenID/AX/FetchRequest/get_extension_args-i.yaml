@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the serialized form of this attribute fetch request. returns a hash of the arguments
+full_name: OpenID::AX::FetchRequest#get_extension_args
+is_singleton: false
+name: get_extension_args
+params: ()
+visibility: public

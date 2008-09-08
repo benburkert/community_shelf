@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Store::Filesystem#cleanup_associations
+is_singleton: false
+name: cleanup_associations
+params: ()
+visibility: public

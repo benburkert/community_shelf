@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: parse the provider authentication policy arguments into the internal state of this object if strict is specified, raise an exception when bad data is encountered
+full_name: OpenID::PAPE::Response#parse_extension_args
+is_singleton: false
+name: parse_extension_args
+params: (args, strict=false)
+visibility: public

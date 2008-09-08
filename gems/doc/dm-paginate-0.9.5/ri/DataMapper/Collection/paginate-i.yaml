@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: DataMapper::Collection#paginate
+is_singleton: false
+name: paginate
+params: (page, limit)
+visibility: public

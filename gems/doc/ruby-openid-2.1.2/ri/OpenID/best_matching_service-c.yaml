@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::best_matching_service
+is_singleton: true
+name: best_matching_service
+params: (service, preferred_types)
+visibility: public

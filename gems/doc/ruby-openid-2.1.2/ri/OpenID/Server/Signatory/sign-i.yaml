@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Sign a response.
+- !ruby/struct:SM::Flow::P 
+  body: I take an OpenIDResponse, create a signature for everything in its signed list, and return a new copy of the response object with that signature included.
+full_name: OpenID::Server::Signatory#sign
+is_singleton: false
+name: sign
+params: (response)
+visibility: public

@@ -1,0 +1,26 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: update_url
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_success_response
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A fetch_response attribute exchange message
+constants: []
+
+full_name: OpenID::AX::FetchResponse
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: get_extension_args
+- !ruby/object:RI::MethodSummary 
+  name: parse_extension_args
+name: FetchResponse
+superclass: KeyValueMessage

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::HTTPResponse::_from_net_response
+is_singleton: true
+name: _from_net_response
+params: (response, final_url, headers=nil)
+visibility: public

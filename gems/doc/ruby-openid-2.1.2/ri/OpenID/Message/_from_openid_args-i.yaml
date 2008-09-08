@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raises InvalidNamespaceError if you try to instantiate a Message with a namespace not in the above allowed list
+full_name: OpenID::Message#_from_openid_args
+is_singleton: false
+name: _from_openid_args
+params: (openid_args)
+visibility: public

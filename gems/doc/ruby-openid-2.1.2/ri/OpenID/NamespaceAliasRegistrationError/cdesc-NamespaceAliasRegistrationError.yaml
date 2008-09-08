@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raised when an alias or namespace URI has already been registered.
+constants: []
+
+full_name: OpenID::NamespaceAliasRegistrationError
+includes: []
+
+instance_methods: []
+
+name: NamespaceAliasRegistrationError
+superclass: Exception

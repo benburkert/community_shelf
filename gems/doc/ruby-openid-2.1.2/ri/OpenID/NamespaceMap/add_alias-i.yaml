@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Add an alias from this namespace URI to the alias.
+full_name: OpenID::NamespaceMap#add_alias
+is_singleton: false
+name: add_alias
+params: (namespace_uri, desired_alias, implicit=false)
+visibility: public

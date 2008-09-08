@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Given an endpoint object created from the information in an OpenID response, perform discovery and verify the discovery results, returning the matching endpoint that is the result of doing that discovery.
+full_name: OpenID::Consumer::IdResHandler#discover_and_verify
+is_singleton: false
+name: discover_and_verify
+params: (claimed_id, to_match_endpoints)
+visibility: protected

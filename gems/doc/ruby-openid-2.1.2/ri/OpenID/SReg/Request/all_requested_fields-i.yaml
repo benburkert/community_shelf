@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A list of all of the simple registration fields that were requested, whether they were required or optional.
+full_name: OpenID::SReg::Request#all_requested_fields
+is_singleton: false
+name: all_requested_fields
+params: ()
+visibility: public

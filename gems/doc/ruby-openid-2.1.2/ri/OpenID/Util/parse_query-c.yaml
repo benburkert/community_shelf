@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Util::parse_query
+is_singleton: true
+name: parse_query
+params: (qs)
+visibility: public

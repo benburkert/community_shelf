@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Add the arguments from this extension to the provided message, or create a new message containing only those arguments. Returns the message with added extension args.
+full_name: OpenID::Extension#to_message
+is_singleton: false
+name: to_message
+params: (message = nil)
+visibility: public

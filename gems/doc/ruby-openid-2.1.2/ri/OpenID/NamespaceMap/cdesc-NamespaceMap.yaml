@@ -1,0 +1,35 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Maintains a bidirectional map between namespace URIs and aliases.
+constants: []
+
+full_name: OpenID::NamespaceMap
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: add
+- !ruby/object:RI::MethodSummary 
+  name: add_alias
+- !ruby/object:RI::MethodSummary 
+  name: aliases
+- !ruby/object:RI::MethodSummary 
+  name: each
+- !ruby/object:RI::MethodSummary 
+  name: get_alias
+- !ruby/object:RI::MethodSummary 
+  name: get_namespace_uri
+- !ruby/object:RI::MethodSummary 
+  name: implicit?
+- !ruby/object:RI::MethodSummary 
+  name: member?
+- !ruby/object:RI::MethodSummary 
+  name: namespace_uris
+name: NamespaceMap
+superclass: Object

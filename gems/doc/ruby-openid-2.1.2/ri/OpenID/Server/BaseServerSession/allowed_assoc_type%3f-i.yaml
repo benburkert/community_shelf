@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::BaseServerSession#allowed_assoc_type?
+is_singleton: false
+name: allowed_assoc_type?
+params: (typ)
+visibility: public

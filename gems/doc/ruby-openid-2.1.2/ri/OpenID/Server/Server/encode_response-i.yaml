@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Encode a response to a WebResponse, signing it first if appropriate.
+- !ruby/struct:SM::Flow::P 
+  body: Raises EncodingError when I can't figure out how to encode this message.
+- !ruby/struct:SM::Flow::P 
+  body: Raises AlreadySigned When this response is already signed.
+full_name: OpenID::Server::Server#encode_response
+is_singleton: false
+name: encode_response
+params: (response)
+visibility: public

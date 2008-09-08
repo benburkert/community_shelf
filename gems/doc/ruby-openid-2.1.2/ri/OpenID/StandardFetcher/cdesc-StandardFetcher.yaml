@@ -1,0 +1,43 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: ca_file
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: timeout
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: USER_AGENT
+  value: "\"ruby-openid/#{OpenID::VERSION} (#{RUBY_PLATFORM})\""
+- !ruby/object:RI::Constant 
+  comment: 
+  name: REDIRECT_LIMIT
+  value: "5"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: TIMEOUT
+  value: "60"
+full_name: OpenID::StandardFetcher
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: fetch
+- !ruby/object:RI::MethodSummary 
+  name: make_connection
+- !ruby/object:RI::MethodSummary 
+  name: make_http
+- !ruby/object:RI::MethodSummary 
+  name: set_verified
+- !ruby/object:RI::MethodSummary 
+  name: supports_ssl?
+name: StandardFetcher
+superclass: Object

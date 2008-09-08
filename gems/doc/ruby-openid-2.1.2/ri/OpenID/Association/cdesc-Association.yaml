@@ -1,0 +1,59 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: assoc_type
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: handle
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: issued
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: lifetime
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: secret
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: deserialize
+- !ruby/object:RI::MethodSummary 
+  name: from_expires_in
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An Association holds the shared secret between a relying party and an OpenID provider.
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: FIELD_ORDER
+  value: "[:version, :handle, :secret, :issued, :lifetime, :assoc_type,]"
+full_name: OpenID::Association
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: ==
+- !ruby/object:RI::MethodSummary 
+  name: check_message_signature
+- !ruby/object:RI::MethodSummary 
+  name: expires_in
+- !ruby/object:RI::MethodSummary 
+  name: get_message_signature
+- !ruby/object:RI::MethodSummary 
+  name: make_pairs
+- !ruby/object:RI::MethodSummary 
+  name: serialize
+- !ruby/object:RI::MethodSummary 
+  name: sign
+- !ruby/object:RI::MethodSummary 
+  name: sign_message
+name: Association
+superclass: Object

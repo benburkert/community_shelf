@@ -1,0 +1,68 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: I'm using this to decode things.
+  name: decoder
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: I'm using this to encode things.
+  name: encoder
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: I use this instance of OpenID::AssociationNegotiator to determine which kinds of associations I can make and how.
+  name: negotiator
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: My URL.
+  name: op_endpoint
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: I'm using this for associate requests and to sign things.
+  name: signatory
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The back-end where my associations and nonces are stored.
+  name: store
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: I handle requests for an OpenID server.
+- !ruby/struct:SM::Flow::P 
+  body: Some types of requests (those which are not checkid requests) may be handed to my handleRequest method, and I will take care of it and return a response.
+- !ruby/struct:SM::Flow::P 
+  body: For your convenience, I also provide an interface to Decoder.decode and SigningEncoder.encode through my methods decodeRequest and encodeResponse.
+- !ruby/struct:SM::Flow::P 
+  body: All my state is encapsulated in an store, which means I'm not generally pickleable but I am easy to reconstruct.
+constants: []
+
+full_name: OpenID::Server::Server
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: decode_request
+- !ruby/object:RI::MethodSummary 
+  name: encode_response
+- !ruby/object:RI::MethodSummary 
+  name: handle_request
+- !ruby/object:RI::MethodSummary 
+  name: openid_associate
+- !ruby/object:RI::MethodSummary 
+  name: openid_check_authentication
+name: Server
+superclass: Object

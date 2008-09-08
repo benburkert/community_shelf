@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::discover_uri
+is_singleton: true
+name: discover_uri
+params: (uri)
+visibility: public

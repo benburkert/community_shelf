@@ -1,0 +1,24 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the next token, returns an instance of
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: HTMLText
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: HTMLToken
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: HTMLTag
+  type: :BULLET
+full_name: HTMLTokenizer#getNextToken
+is_singleton: false
+name: getNextToken
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Handle and respond to check_authentication requests.
+full_name: OpenID::Server::Server#openid_check_authentication
+is_singleton: false
+name: openid_check_authentication
+params: (request)
+visibility: public

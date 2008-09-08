@@ -1,0 +1,25 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The response that failed to encode.
+  name: response
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Could not encode this as a protocol message.
+- !ruby/struct:SM::Flow::P 
+  body: You should probably render it and show it to the user.
+constants: []
+
+full_name: OpenID::Server::EncodingError
+includes: []
+
+instance_methods: []
+
+name: EncodingError
+superclass: Exception

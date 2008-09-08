@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::arrange_by_type
+is_singleton: true
+name: arrange_by_type
+params: (service_list, preferred_types)
+visibility: public

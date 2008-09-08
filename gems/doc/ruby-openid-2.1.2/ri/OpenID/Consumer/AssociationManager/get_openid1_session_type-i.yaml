@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Given an association response message, extract the OpenID 1.X session type. Returns the association type for this message
+- !ruby/struct:SM::Flow::P 
+  body: This function mostly takes care of the 'no-encryption' default behavior in OpenID 1.
+- !ruby/struct:SM::Flow::P 
+  body: If the association type is plain-text, this function will return 'no-encryption'
+full_name: OpenID::Consumer::AssociationManager#get_openid1_session_type
+is_singleton: false
+name: get_openid1_session_type
+params: (assoc_response)
+visibility: protected

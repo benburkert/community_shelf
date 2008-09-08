@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::get_acceptable
+is_singleton: true
+name: get_acceptable
+params: (accept_header, have_types)
+visibility: public

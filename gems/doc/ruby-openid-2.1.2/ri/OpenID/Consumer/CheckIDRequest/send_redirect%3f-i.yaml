@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Should this OpenID authentication request be sent as a HTTP redirect or as a POST (form submission)?
+- !ruby/struct:SM::Flow::P 
+  body: This takes the same parameters as redirect_url or form_markup
+full_name: OpenID::Consumer::CheckIDRequest#send_redirect?
+is_singleton: false
+name: send_redirect?
+params: (realm, return_to=nil, immediate=false)
+visibility: public

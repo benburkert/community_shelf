@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A new DiffieHellman object, using the modulus and generator from the OpenID specification
+full_name: OpenID::DiffieHellman::from_defaults
+is_singleton: true
+name: from_defaults
+params: ()
+visibility: public

@@ -1,0 +1,22 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: DEFAULT_PROXY
+  value: "'http://proxy.xri.net/'"
+full_name: OpenID::Yadis::XRI::ProxyResolver
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: query
+- !ruby/object:RI::MethodSummary 
+  name: query_url
+name: ProxyResolver
+superclass: Object

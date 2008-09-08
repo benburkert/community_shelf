@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#association_manager
+is_singleton: false
+name: association_manager
+params: (service)
+visibility: protected

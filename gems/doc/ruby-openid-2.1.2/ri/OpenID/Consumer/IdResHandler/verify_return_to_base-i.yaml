@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::IdResHandler#verify_return_to_base
+is_singleton: false
+name: verify_return_to_base
+params: (msg_return_to)
+visibility: protected

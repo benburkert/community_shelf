@@ -1,0 +1,66 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: endpoint
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: message
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Handles an openid.mode=id_res response. This object is instantiated and used by the Consumer.
+constants: []
+
+full_name: OpenID::Consumer::IdResHandler
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: check_auth
+- !ruby/object:RI::MethodSummary 
+  name: check_for_fields
+- !ruby/object:RI::MethodSummary 
+  name: check_nonce
+- !ruby/object:RI::MethodSummary 
+  name: check_signature
+- !ruby/object:RI::MethodSummary 
+  name: create_check_auth_request
+- !ruby/object:RI::MethodSummary 
+  name: discover_and_verify
+- !ruby/object:RI::MethodSummary 
+  name: fetch
+- !ruby/object:RI::MethodSummary 
+  name: id_res
+- !ruby/object:RI::MethodSummary 
+  name: openid_namespace
+- !ruby/object:RI::MethodSummary 
+  name: process_check_auth_response
+- !ruby/object:RI::MethodSummary 
+  name: server_url
+- !ruby/object:RI::MethodSummary 
+  name: signed_fields
+- !ruby/object:RI::MethodSummary 
+  name: signed_list
+- !ruby/object:RI::MethodSummary 
+  name: verify_discovered_services
+- !ruby/object:RI::MethodSummary 
+  name: verify_discovery_results
+- !ruby/object:RI::MethodSummary 
+  name: verify_discovery_results_openid1
+- !ruby/object:RI::MethodSummary 
+  name: verify_discovery_results_openid2
+- !ruby/object:RI::MethodSummary 
+  name: verify_discovery_single
+- !ruby/object:RI::MethodSummary 
+  name: verify_return_to
+- !ruby/object:RI::MethodSummary 
+  name: verify_return_to_args
+- !ruby/object:RI::MethodSummary 
+  name: verify_return_to_base
+name: IdResHandler
+superclass: Object

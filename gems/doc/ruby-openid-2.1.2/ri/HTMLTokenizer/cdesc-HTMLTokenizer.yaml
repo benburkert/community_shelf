@@ -1,0 +1,38 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: page
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+- !ruby/object:RI::MethodSummary 
+  name: version
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A class to tokenize HTML.
+- !ruby/struct:SM::Flow::P 
+  body: "Example:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  page = &quot;&lt;HTML&gt;\n  &lt;HEAD&gt;\n  &lt;TITLE&gt;This is the title&lt;/TITLE&gt;\n  &lt;/HEAD&gt;\n   &lt;!-- Here comes the &lt;a href=\\&quot;missing.link\\&quot;&gt;blah&lt;/a&gt;\n   comment body\n    --&gt;\n   &lt;BODY&gt;\n     &lt;H1&gt;This is the header&lt;/H1&gt;\n     &lt;P&gt;\n       This is the paragraph, it contains\n       &lt;a href=\\&quot;link.html\\&quot;&gt;links&lt;/a&gt;,\n       &lt;img src=\\&quot;blah.gif\\&quot; optional alt='images\n       are\n       really cool'&gt;.  Ok, here is some more text and\n       &lt;A href=\\&quot;http://another.link.com/\\&quot; target=\\&quot;_blank\\&quot;&gt;another link&lt;/A&gt;.\n     &lt;/P&gt;\n   &lt;/body&gt;\n   &lt;/HTML&gt;\n   &quot;\n   toke = HTMLTokenizer.new(page)\n\n   assert(&quot;&lt;h1&gt;&quot; == toke.getTag(&quot;h1&quot;, &quot;h2&quot;, &quot;h3&quot;).to_s.downcase)\n   assert(HTMLTag.new(&quot;&lt;a href=\\&quot;link.html\\&quot;&gt;&quot;) == toke.getTag(&quot;IMG&quot;, &quot;A&quot;))\n   assert(&quot;links&quot; == toke.getTrimmedText)\n   assert(toke.getTag(&quot;IMG&quot;, &quot;A&quot;).attr_hash['optional'])\n   assert(&quot;_blank&quot; == toke.getTag(&quot;IMG&quot;, &quot;A&quot;).attr_hash['target'])\n"
+constants: []
+
+full_name: HTMLTokenizer
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: getNextToken
+- !ruby/object:RI::MethodSummary 
+  name: getTag
+- !ruby/object:RI::MethodSummary 
+  name: getText
+- !ruby/object:RI::MethodSummary 
+  name: getTrimmedText
+- !ruby/object:RI::MethodSummary 
+  name: peekNextToken
+- !ruby/object:RI::MethodSummary 
+  name: reset
+name: HTMLTokenizer
+superclass: Object

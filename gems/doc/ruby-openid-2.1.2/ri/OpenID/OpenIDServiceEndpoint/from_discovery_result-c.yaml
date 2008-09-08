@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::OpenIDServiceEndpoint::from_discovery_result
+is_singleton: true
+name: from_discovery_result
+params: (discoveryResult)
+visibility: public

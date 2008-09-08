@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: get the number of responses for this attribute
+full_name: OpenID::AX::KeyValueMessage#count
+is_singleton: false
+name: count
+params: (type_uri)
+visibility: public

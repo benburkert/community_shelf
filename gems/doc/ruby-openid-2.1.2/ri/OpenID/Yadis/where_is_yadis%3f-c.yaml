@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Given a HTTPResponse, return the location of the Yadis document.
+- !ruby/struct:SM::Flow::P 
+  body: May be the URL just retrieved, another URL, or None, if I can't find any.
+- !ruby/struct:SM::Flow::P 
+  body: "[non-blocking]"
+full_name: OpenID::Yadis::where_is_yadis?
+is_singleton: true
+name: where_is_yadis?
+params: (resp)
+visibility: public

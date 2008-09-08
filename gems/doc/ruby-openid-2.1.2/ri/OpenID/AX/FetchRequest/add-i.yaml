@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Add an attribute to this attribute exchange request. attribute: AttrInfo, the attribute being requested Raises IndexError if the requested attribute is already present"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  in this request.\n"
+full_name: OpenID::AX::FetchRequest#add
+is_singleton: false
+name: add
+params: (attribute)
+visibility: public

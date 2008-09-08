@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::CryptUtil::sha256
+is_singleton: true
+name: sha256
+params: (text)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Is the identifier to be selected by the IDP?
+full_name: OpenID::Server::CheckIDRequest#id_select
+is_singleton: false
+name: id_select
+params: ()
+visibility: public

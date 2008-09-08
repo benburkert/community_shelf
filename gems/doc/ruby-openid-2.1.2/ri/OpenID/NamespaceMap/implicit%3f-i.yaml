@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::NamespaceMap#implicit?
+is_singleton: false
+name: implicit?
+params: (namespace_uri)
+visibility: public

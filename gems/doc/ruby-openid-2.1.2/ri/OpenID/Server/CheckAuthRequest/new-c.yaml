@@ -1,0 +1,28 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Construct me.
+- !ruby/struct:SM::Flow::P 
+  body: These parameters are assigned directly as class attributes.
+- !ruby/struct:SM::Flow::P 
+  body: "Parameters:"
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "assoc_handle:"
+    body: the association handle for this request
+  - !ruby/struct:SM::Flow::LI 
+    label: "signed:"
+    body: The signed message
+  - !ruby/struct:SM::Flow::LI 
+    label: "invalidate_handle:"
+    body: An association handle that the relying party is checking to see if it is invalid
+  type: :NOTE
+full_name: OpenID::Server::CheckAuthRequest::new
+is_singleton: true
+name: new
+params: (assoc_handle, signed, invalidate_handle=nil)
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::fetch
+is_singleton: true
+name: fetch
+params: (url, body=nil, headers=nil, redirect_limit=StandardFetcher::REDIRECT_LIMIT)
+visibility: public

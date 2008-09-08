@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Convert a number to its binary representation; return a string of bytes.
+full_name: OpenID::CryptUtil::num_to_binary
+is_singleton: true
+name: num_to_binary
+params: (n)
+visibility: public

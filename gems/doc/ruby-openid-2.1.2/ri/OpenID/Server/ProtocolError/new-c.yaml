@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "text:"
+    body: A message about the encountered error.
+  type: :NOTE
+full_name: OpenID::Server::ProtocolError::new
+is_singleton: true
+name: new
+params: (message, text=nil, reference=nil, contact=nil)
+visibility: public

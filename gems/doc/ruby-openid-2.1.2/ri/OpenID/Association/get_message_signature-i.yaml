@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the signature for this message
+full_name: OpenID::Association#get_message_signature
+is_singleton: false
+name: get_message_signature
+params: (message)
+visibility: public

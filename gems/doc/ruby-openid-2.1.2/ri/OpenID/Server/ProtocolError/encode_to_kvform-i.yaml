@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::ProtocolError#encode_to_kvform
+is_singleton: false
+name: encode_to_kvform
+params: ()
+visibility: public

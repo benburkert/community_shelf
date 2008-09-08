@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Returns an array of endpoint objects produced by the filter procs.
+full_name: OpenID::Yadis::TransformFilterMaker#get_service_endpoints
+is_singleton: false
+name: get_service_endpoints
+params: (yadis_url, service_element)
+visibility: public

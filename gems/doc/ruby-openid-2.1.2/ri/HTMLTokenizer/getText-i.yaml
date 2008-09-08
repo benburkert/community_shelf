@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get all the text between the current position and the next tag (if specified) or a specific later tag
+full_name: HTMLTokenizer#getText
+is_singleton: false
+name: getText
+params: (until_tag = nil)
+visibility: public

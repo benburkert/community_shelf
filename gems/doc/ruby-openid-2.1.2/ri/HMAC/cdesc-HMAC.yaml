@@ -1,0 +1,26 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "This module provides common interface to HMAC engines. HMAC standard is documented in RFC 2104:"
+- !ruby/struct:SM::Flow::VERB 
+  body: "  H. Krawczyk et al., &quot;HMAC: Keyed-Hashing for Message Authentication&quot;,\n  RFC 2104, February 1997\n"
+- !ruby/struct:SM::Flow::P 
+  body: These APIs are inspired by JCE 1.2's javax.crypto.Mac interface.
+- !ruby/struct:SM::Flow::VERB 
+  body: "  &lt;URL:http://java.sun.com/security/JCE1.2/spec/apidoc/javax/crypto/Mac.html&gt;\n"
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: STATUS_INITIALIZED
+  value: 0, 1
+full_name: HMAC
+includes: []
+
+instance_methods: []
+
+name: HMAC
+superclass: 

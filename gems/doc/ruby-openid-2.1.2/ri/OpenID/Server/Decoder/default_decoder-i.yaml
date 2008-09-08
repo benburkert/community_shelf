@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Called to decode queries when no handler for that mode is found.
+- !ruby/struct:SM::Flow::P 
+  body: This implementation always raises ProtocolError.
+full_name: OpenID::Server::Decoder#default_decoder
+is_singleton: false
+name: default_decoder
+params: (message, server)
+visibility: public

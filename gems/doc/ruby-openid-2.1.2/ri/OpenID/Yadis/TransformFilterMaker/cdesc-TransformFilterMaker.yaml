@@ -1,0 +1,28 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: filter_procs
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Take a list of basic filters and makes a filter that transforms the basic filter into a top-level filter. This is mostly useful for the implementation of make_filter, which should only be needed for special cases or internal use by this library.
+- !ruby/struct:SM::Flow::P 
+  body: This object is useful for creating simple filters for services that use one URI and are specified by one Type (we expect most Types will fit this paradigm).
+- !ruby/struct:SM::Flow::P 
+  body: Creates a BasicServiceEndpoint object and apply the filter functions to it until one of them returns a value.
+constants: []
+
+full_name: OpenID::Yadis::TransformFilterMaker
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: apply_filters
+- !ruby/object:RI::MethodSummary 
+  name: get_service_endpoints
+name: TransformFilterMaker
+superclass: Object

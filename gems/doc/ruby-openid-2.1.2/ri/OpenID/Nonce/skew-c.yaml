@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: The allowed nonce time skew in seconds. Defaults to 5 hours. Used for checking nonce validity, and by stores' cleanup methods.
+full_name: OpenID::Nonce::skew
+is_singleton: true
+name: skew
+params: ()
+visibility: public

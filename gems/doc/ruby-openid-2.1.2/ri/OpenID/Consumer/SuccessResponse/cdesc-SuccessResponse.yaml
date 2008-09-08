@@ -1,0 +1,38 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: message
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: signed_fields
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A successful acknowledgement from the OpenID server that the supplied URL is, indeed controlled by the requesting agent.
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: STATUS
+  value: SUCCESS
+full_name: OpenID::Consumer::SuccessResponse
+includes: 
+- !ruby/object:RI::IncludedModule 
+  name: Response
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: extension_response
+- !ruby/object:RI::MethodSummary 
+  name: get_signed
+- !ruby/object:RI::MethodSummary 
+  name: get_signed_ns
+- !ruby/object:RI::MethodSummary 
+  name: is_openid1
+- !ruby/object:RI::MethodSummary 
+  name: signed?
+name: SuccessResponse
+superclass: Object

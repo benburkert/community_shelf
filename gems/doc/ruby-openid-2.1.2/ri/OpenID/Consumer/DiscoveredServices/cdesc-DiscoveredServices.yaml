@@ -1,0 +1,28 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: current
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A set of discovered services, for tracking which providers have been attempted for an OpenID identifier
+constants: []
+
+full_name: OpenID::Consumer::DiscoveredServices
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: empty?
+- !ruby/object:RI::MethodSummary 
+  name: for_url?
+- !ruby/object:RI::MethodSummary 
+  name: next
+- !ruby/object:RI::MethodSummary 
+  name: started?
+name: DiscoveredServices
+superclass: Object

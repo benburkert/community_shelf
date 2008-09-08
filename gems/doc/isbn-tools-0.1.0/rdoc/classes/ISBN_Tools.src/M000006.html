@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>compute_isbn10_check_digit (ISBN_Tools)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre>     <span class="ruby-comment cmt"># File lib/isbn/tools.rb, line 96</span>
+ 96:         <span class="ruby-keyword kw">def</span> <span class="ruby-constant">ISBN_Tools</span>.<span class="ruby-identifier">compute_isbn10_check_digit</span>(<span class="ruby-identifier">isbn_</span>)
+ 97:                 <span class="ruby-identifier">isbn</span> = <span class="ruby-identifier">cleanup</span>(<span class="ruby-identifier">isbn_</span>)
+ 98:                 <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">isbn</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">isbn</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">10</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">isbn</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">9</span>
+ 99:                 <span class="ruby-identifier">sum</span> = <span class="ruby-value">0</span>; 
+100:                 <span class="ruby-value">0</span>.<span class="ruby-identifier">upto</span>(<span class="ruby-value">8</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">ndx</span><span class="ruby-operator">|</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">isbn</span>[<span class="ruby-identifier">ndx</span>].<span class="ruby-identifier">chr</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">*</span> (<span class="ruby-value">10</span><span class="ruby-operator">-</span><span class="ruby-identifier">ndx</span>) }
+101:                 (<span class="ruby-value">11</span><span class="ruby-operator">-</span><span class="ruby-identifier">sum</span>) <span class="ruby-operator">%</span> <span class="ruby-value">11</span> <span class="ruby-operator">==</span> <span class="ruby-value">10</span> <span class="ruby-operator">?</span> <span class="ruby-value str">&quot;X&quot;</span> <span class="ruby-operator">:</span> ((<span class="ruby-value">11</span><span class="ruby-operator">-</span><span class="ruby-identifier">sum</span>) <span class="ruby-operator">%</span> <span class="ruby-value">11</span>).<span class="ruby-identifier">to_s</span>
+102:         <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::DiscoveryManager#create_manager
+is_singleton: false
+name: create_manager
+params: (yadis_url, services)
+visibility: protected

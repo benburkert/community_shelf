@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::find_op_local_identifier
+is_singleton: true
+name: find_op_local_identifier
+params: (service_element, type_uris)
+visibility: public

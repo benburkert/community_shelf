@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get html for a form to submit this request to the IDP.
+- !ruby/struct:SM::Flow::P 
+  body: form_tag_attrs is a hash of attributes to be added to the form tag. 'accept-charset' and 'enctype' have defaults that can be overridden. If a value is supplied for 'action' or 'method', it will be replaced.
+full_name: OpenID::Consumer::CheckIDRequest#form_markup
+is_singleton: false
+name: form_markup
+params: (realm, return_to=nil, immediate=false, form_tag_attrs=nil)
+visibility: public

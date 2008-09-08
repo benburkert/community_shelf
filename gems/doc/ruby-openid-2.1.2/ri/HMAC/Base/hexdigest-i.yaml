@@ -1,0 +1,11 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: 
+- !ruby/object:RI::AliasName 
+  name: to_s
+block_params: 
+comment: 
+full_name: HMAC::Base#hexdigest
+is_singleton: false
+name: hexdigest
+params: ()
+visibility: public

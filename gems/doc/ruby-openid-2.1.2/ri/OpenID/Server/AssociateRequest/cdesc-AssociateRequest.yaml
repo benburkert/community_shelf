@@ -1,0 +1,36 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The type of association. Supported values include HMAC-SHA256 and HMAC-SHA1
+  name: assoc_type
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: An object that knows how to handle association requests of a certain type.
+  name: session
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_message
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A request to establish an association.
+- !ruby/struct:SM::Flow::P 
+  body: "See OpenID Specs, Section 8: Establishing Associations &lt;http://openid.net/specs/openid-authentication-2_0-12.html#associations&gt;"
+constants: []
+
+full_name: OpenID::Server::AssociateRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: answer
+- !ruby/object:RI::MethodSummary 
+  name: answer_unsupported
+name: AssociateRequest
+superclass: OpenIDRequest

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Serialize this object into arguments in the attribute exchange namespace Takes an optional FetchRequest. If specified, the response will be validated against this request, and empty responses for requested fields with no data will be sent.
+full_name: OpenID::AX::FetchResponse#get_extension_args
+is_singleton: false
+name: get_extension_args
+params: (request = nil)
+visibility: public

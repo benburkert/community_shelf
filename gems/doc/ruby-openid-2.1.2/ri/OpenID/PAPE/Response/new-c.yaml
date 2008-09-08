@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::PAPE::Response::new
+is_singleton: true
+name: new
+params: (auth_policies=[], auth_time=nil, nist_auth_level=nil)
+visibility: public

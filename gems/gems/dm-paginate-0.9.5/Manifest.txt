@@ -1,0 +1,9 @@
+History.txt
+LICENSE
+Manifest.txt
+README.txt
+Rakefile
+TODO
+lib/dm-paginate.rb
+lib/dm-paginate/paginate.rb
+lib/dm-paginate/version.rb

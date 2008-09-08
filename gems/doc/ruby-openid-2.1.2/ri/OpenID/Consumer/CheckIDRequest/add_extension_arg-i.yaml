@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Add an extension argument to this OpenID authentication request. You probably want to use add_extension and the OpenID::Extension interface.
+- !ruby/struct:SM::Flow::P 
+  body: Use caution when adding arguments, because they will be URL-escaped and appended to the redirect URL, which can easily get quite long.
+full_name: OpenID::Consumer::CheckIDRequest#add_extension_arg
+is_singleton: false
+name: add_extension_arg
+params: (namespace, key, value)
+visibility: public

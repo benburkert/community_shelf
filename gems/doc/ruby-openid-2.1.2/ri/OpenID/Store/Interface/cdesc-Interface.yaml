@@ -1,0 +1,42 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Abstract Store Changes in 2.0:"
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: removed store_nonce, get_auth_key, is_dumb
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: changed use_nonce to support one-way nonces
+  - !ruby/struct:SM::Flow::LI 
+    label: "*"
+    body: added cleanup_nonces, cleanup_associations, cleanup
+  type: :BULLET
+constants: []
+
+full_name: OpenID::Store::Interface
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: cleanup
+- !ruby/object:RI::MethodSummary 
+  name: cleanup_associations
+- !ruby/object:RI::MethodSummary 
+  name: cleanup_nonces
+- !ruby/object:RI::MethodSummary 
+  name: get_association
+- !ruby/object:RI::MethodSummary 
+  name: remove_association
+- !ruby/object:RI::MethodSummary 
+  name: store_association
+- !ruby/object:RI::MethodSummary 
+  name: use_nonce
+name: Interface
+superclass: Object

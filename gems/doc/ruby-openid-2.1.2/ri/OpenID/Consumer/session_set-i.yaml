@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#session_set
+is_singleton: false
+name: session_set
+params: (name, val)
+visibility: protected

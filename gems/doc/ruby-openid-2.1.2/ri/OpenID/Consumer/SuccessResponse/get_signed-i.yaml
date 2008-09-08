@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Return the specified signed field if available, otherwise return default
+full_name: OpenID::Consumer::SuccessResponse#get_signed
+is_singleton: false
+name: get_signed
+params: (ns_uri, ns_key, default=nil)
+visibility: public

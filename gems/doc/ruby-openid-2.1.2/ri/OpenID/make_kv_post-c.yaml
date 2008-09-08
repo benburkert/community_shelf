@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Send the message to the server via HTTP POST and receive and parse a response in KV Form
+full_name: OpenID::make_kv_post
+is_singleton: true
+name: make_kv_post
+params: (request_message, server_url)
+visibility: public

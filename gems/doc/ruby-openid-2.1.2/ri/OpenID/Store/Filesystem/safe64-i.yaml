@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Store::Filesystem#safe64
+is_singleton: false
+name: safe64
+params: (s)
+visibility: protected

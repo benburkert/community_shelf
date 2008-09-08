@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Return whether a particular key is signed, regardless of its namespace alias
+full_name: OpenID::Consumer::SuccessResponse#signed?
+is_singleton: false
+name: signed?
+params: (ns_uri, ns_key)
+visibility: public

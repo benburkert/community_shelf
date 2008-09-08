@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: DataMapper::Is::Permalink::InstanceMethods#create_permalink!
+is_singleton: false
+name: create_permalink!
+params: (source, ident)
+visibility: public

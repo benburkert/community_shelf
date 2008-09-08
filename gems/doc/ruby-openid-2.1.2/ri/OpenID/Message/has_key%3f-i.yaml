@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Message#has_key?
+is_singleton: false
+name: has_key?
+params: (namespace, ns_key)
+visibility: public

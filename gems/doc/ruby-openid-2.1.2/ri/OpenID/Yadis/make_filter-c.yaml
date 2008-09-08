@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Convert a filter-convertable thing into a filter
+- !ruby/struct:SM::Flow::P 
+  body: parts should be a filter, an endpoint, a callable, or a list of any of these.
+full_name: OpenID::Yadis::make_filter
+is_singleton: true
+name: make_filter
+params: (parts)
+visibility: public

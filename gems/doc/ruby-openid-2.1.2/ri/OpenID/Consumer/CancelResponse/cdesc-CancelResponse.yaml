@@ -1,0 +1,20 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: STATUS
+  value: CANCEL
+full_name: OpenID::Consumer::CancelResponse
+includes: 
+- !ruby/object:RI::IncludedModule 
+  name: Response
+instance_methods: []
+
+name: CancelResponse
+superclass: Object

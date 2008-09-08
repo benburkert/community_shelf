@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::WebResponse::new
+is_singleton: true
+name: new
+params: (code=HTTP_OK, headers=nil, body="")
+visibility: public

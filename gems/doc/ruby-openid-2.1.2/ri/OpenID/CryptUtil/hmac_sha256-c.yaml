@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::CryptUtil::hmac_sha256
+is_singleton: true
+name: hmac_sha256
+params: (key, text)
+visibility: public

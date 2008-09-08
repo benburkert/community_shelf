@@ -1,0 +1,31 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: contact
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: message
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: reference
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: STATUS
+  value: FAILURE
+full_name: OpenID::Consumer::FailureResponse
+includes: 
+- !ruby/object:RI::IncludedModule 
+  name: Response
+instance_methods: []
+
+name: FailureResponse
+superclass: Object

@@ -1,0 +1,185 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: arrange_by_type
+- !ruby/object:RI::MethodSummary 
+  name: best_matching_service
+- !ruby/object:RI::MethodSummary 
+  name: check_sreg_field_name
+- !ruby/object:RI::MethodSummary 
+  name: discover
+- !ruby/object:RI::MethodSummary 
+  name: discover_no_yadis
+- !ruby/object:RI::MethodSummary 
+  name: discover_uri
+- !ruby/object:RI::MethodSummary 
+  name: discover_xri
+- !ruby/object:RI::MethodSummary 
+  name: discover_yadis
+- !ruby/object:RI::MethodSummary 
+  name: fetch
+- !ruby/object:RI::MethodSummary 
+  name: fetcher
+- !ruby/object:RI::MethodSummary 
+  name: fetcher=
+- !ruby/object:RI::MethodSummary 
+  name: fetcher_use_env_http_proxy
+- !ruby/object:RI::MethodSummary 
+  name: find_first_href
+- !ruby/object:RI::MethodSummary 
+  name: find_links_rel
+- !ruby/object:RI::MethodSummary 
+  name: find_op_local_identifier
+- !ruby/object:RI::MethodSummary 
+  name: get_op_or_user_services
+- !ruby/object:RI::MethodSummary 
+  name: get_secret_size
+- !ruby/object:RI::MethodSummary 
+  name: get_sreg_ns
+- !ruby/object:RI::MethodSummary 
+  name: link_has_rel
+- !ruby/object:RI::MethodSummary 
+  name: make_kv_post
+- !ruby/object:RI::MethodSummary 
+  name: normalize_url
+- !ruby/object:RI::MethodSummary 
+  name: openid_unescape
+- !ruby/object:RI::MethodSummary 
+  name: parse_link_attrs
+- !ruby/object:RI::MethodSummary 
+  name: rel_matches
+- !ruby/object:RI::MethodSummary 
+  name: supports_sreg?
+- !ruby/object:RI::MethodSummary 
+  name: unescape_hash
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Copyright 2006-2007 JanRain, Inc.
+- !ruby/struct:SM::Flow::P 
+  body: Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+- !ruby/struct:SM::Flow::VERB 
+  body: "  http://www.apache.org/licenses/LICENSE-2.0\n"
+- !ruby/struct:SM::Flow::P 
+  body: Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: DefaultNegotiator
+  value: AssociationNegotiator.new([['HMAC-SHA1', 'DH-SHA1'],                                ['HMAC-SHA1', 'no-encryption'],                                ['HMAC-SHA256', 'DH-SHA256'],                                ['HMAC-SHA256', 'no-encryption']])
+- !ruby/object:RI::Constant 
+  comment: 
+  name: EncryptedNegotiator
+  value: AssociationNegotiator.new([['HMAC-SHA1', 'DH-SHA1'],                                ['HMAC-SHA256', 'DH-SHA256']])
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_1_0_NS
+  value: "'http://openid.net/xmlns/1.0'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_IDP_2_0_TYPE
+  value: "'http://specs.openid.net/auth/2.0/server'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_2_0_TYPE
+  value: "'http://specs.openid.net/auth/2.0/signon'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_1_1_TYPE
+  value: "'http://openid.net/signon/1.1'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_1_0_TYPE
+  value: "'http://openid.net/signon/1.0'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_1_0_MESSAGE_NS
+  value: OPENID1_NS
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID_2_0_MESSAGE_NS
+  value: OPENID2_NS
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: Stuff to remove before we start looking for tags
+  name: REMOVED_RE
+  value: "/     # Comments     <!--.*?-->      # CDATA blocks   | <!\\[CDATA\\[.*?\\]\\]>      # script blocks   | <script\\b      # make sure script is not an XML namespace     (?!:)      [^>]*>.*?<\\/script>    /mixu"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: IDENTIFIER_SELECT
+  value: "'http://specs.openid.net/auth/2.0/identifier_select'"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: URI for Simple Registration extension, the only commonly deployed OpenID 1.x extension, and so a special case.
+  name: SREG_URI
+  value: "'http://openid.net/sreg/1.0'"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The OpenID 1.x namespace URIs
+  name: OPENID1_NS
+  value: "'http://openid.net/signon/1.0'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID11_NS
+  value: "'http://openid.net/signon/1.1'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: OPENID1_NAMESPACES
+  value: "[OPENID1_NS, OPENID11_NS]"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The OpenID 2.0 namespace URI
+  name: OPENID2_NS
+  value: "'http://specs.openid.net/auth/2.0'"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The namespace consisting of pairs with keys that are prefixed with &quot;openid.&quot; but not in another namespace.
+  name: NULL_NAMESPACE
+  value: ":null_namespace"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The null namespace, when it is an allowed OpenID namespace
+  name: OPENID_NS
+  value: ":openid_namespace"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The top-level namespace, excluding all pairs with keys that start with &quot;openid.&quot;
+  name: BARE_NS
+  value: ":bare_namespace"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: Limit, in bytes, of identity provider and return_to URLs, including response payload. See OpenID 1.1 specification, Appendix D.
+  name: OPENID1_URL_LIMIT
+  value: "2047"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: All OpenID protocol fields. Used to check namespace aliases.
+  name: OPENID_PROTOCOL_FIELDS
+  value: "[                             'ns', 'mode', 'error', 'return_to',                             'contact', 'reference', 'signed',                             'assoc_type', 'session_type',                             'dh_modulus', 'dh_gen',                             'dh_consumer_public', 'claimed_id',                             'identity', 'realm', 'invalidate_handle',                             'op_endpoint', 'response_nonce', 'sig',                             'assoc_handle', 'trust_root', 'openid',                            ]"
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: Sentinel used for Message implementation to indicate that getArg should raise an exception instead of returning a default.
+  name: NO_DEFAULT
+  value: ":no_default"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: VERSION
+  value: "\"2.1.2\""
+full_name: OpenID
+includes: []
+
+instance_methods: []
+
+name: OpenID
+superclass: 

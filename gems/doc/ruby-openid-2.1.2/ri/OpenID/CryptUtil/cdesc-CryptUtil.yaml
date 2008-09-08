@@ -1,0 +1,36 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: base64_to_num
+- !ruby/object:RI::MethodSummary 
+  name: binary_to_num
+- !ruby/object:RI::MethodSummary 
+  name: hmac_sha1
+- !ruby/object:RI::MethodSummary 
+  name: hmac_sha256
+- !ruby/object:RI::MethodSummary 
+  name: num_to_base64
+- !ruby/object:RI::MethodSummary 
+  name: num_to_binary
+- !ruby/object:RI::MethodSummary 
+  name: rand
+- !ruby/object:RI::MethodSummary 
+  name: random_string
+- !ruby/object:RI::MethodSummary 
+  name: sha1
+- !ruby/object:RI::MethodSummary 
+  name: sha256
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: This module contains everything needed to perform low-level cryptograph and data manipulation tasks.
+constants: []
+
+full_name: OpenID::CryptUtil
+includes: []
+
+instance_methods: []
+
+name: CryptUtil
+superclass: 

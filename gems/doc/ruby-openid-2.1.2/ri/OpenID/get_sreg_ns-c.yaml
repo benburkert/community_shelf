@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Extract the simple registration namespace URI from the given OpenID message. Handles OpenID 1 and 2, as well as both sreg namespace URIs found in the wild, as well as missing namespace definitions (for OpenID 1)
+full_name: OpenID::get_sreg_ns
+is_singleton: true
+name: get_sreg_ns
+params: (message)
+visibility: public

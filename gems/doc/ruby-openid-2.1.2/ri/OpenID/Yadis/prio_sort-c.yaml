@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Sort a list of elements that have priority attributes.
+full_name: OpenID::Yadis::prio_sort
+is_singleton: true
+name: prio_sort
+params: (elements)
+visibility: public

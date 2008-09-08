@@ -1,0 +1,36 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: data
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Abstract class that implements a message that has attribute keys and values. It contains the common code between fetch_response and store_request.
+constants: []
+
+full_name: OpenID::AX::KeyValueMessage
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: "[]"
+- !ruby/object:RI::MethodSummary 
+  name: _get_extension_kv_args
+- !ruby/object:RI::MethodSummary 
+  name: add_value
+- !ruby/object:RI::MethodSummary 
+  name: count
+- !ruby/object:RI::MethodSummary 
+  name: get
+- !ruby/object:RI::MethodSummary 
+  name: get_single
+- !ruby/object:RI::MethodSummary 
+  name: parse_extension_args
+- !ruby/object:RI::MethodSummary 
+  name: set_values
+name: KeyValueMessage
+superclass: AXMessage

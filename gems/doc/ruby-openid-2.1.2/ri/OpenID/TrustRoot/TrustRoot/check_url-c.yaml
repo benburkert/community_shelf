@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: quick func for validating a url against a trust root. See the TrustRoot class if you need more control.
+full_name: OpenID::TrustRoot::TrustRoot::check_url
+is_singleton: true
+name: check_url
+params: (trust_root, url)
+visibility: public

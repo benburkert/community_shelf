@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raised when an operation was attempted that is not compatible with the protocol version being used.
+constants: []
+
+full_name: OpenID::Server::VersionError
+includes: []
+
+instance_methods: []
+
+name: VersionError
+superclass: Exception

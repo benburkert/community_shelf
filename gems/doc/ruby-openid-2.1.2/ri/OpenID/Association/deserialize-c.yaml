@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Load a serialized Association
+full_name: OpenID::Association::deserialize
+is_singleton: true
+name: deserialize
+params: (serialized)
+visibility: public

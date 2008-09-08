@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: This method will raise ProtocolError unless the request is a valid id_res response. Once it has been verified, the methods 'endpoint', 'message', and 'signed_fields' contain the verified information.
+full_name: OpenID::Consumer::IdResHandler#id_res
+is_singleton: false
+name: id_res
+params: ()
+visibility: protected

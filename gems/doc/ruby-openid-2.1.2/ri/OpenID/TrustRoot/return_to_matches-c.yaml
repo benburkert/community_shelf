@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Is the return_to URL under one of the supplied allowed return_to URLs?
+full_name: OpenID::TrustRoot::return_to_matches
+is_singleton: true
+name: return_to_matches
+params: (allowed_return_to_urls, return_to)
+visibility: public

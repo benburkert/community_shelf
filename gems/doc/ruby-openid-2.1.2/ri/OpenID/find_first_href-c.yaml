@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::find_first_href
+is_singleton: true
+name: find_first_href
+params: (link_attrs_list, target_rel)
+visibility: public

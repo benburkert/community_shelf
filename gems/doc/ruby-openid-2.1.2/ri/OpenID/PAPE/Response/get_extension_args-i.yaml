@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::PAPE::Response#get_extension_args
+is_singleton: false
+name: get_extension_args
+params: ()
+visibility: public

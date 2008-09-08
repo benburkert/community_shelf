@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: The display identifier is related to the Claimed Identifier, but the two are not always identical. The display identifier is something the user should recognize as what they entered, whereas the response's claimed identifier (in the identity_url attribute) may have extra information for better persistence.
+- !ruby/struct:SM::Flow::P 
+  body: URLs will be stripped of their fragments for display. XRIs will display the human-readable identifier (i-name) instead of the persistent identifier (i-number).
+- !ruby/struct:SM::Flow::P 
+  body: Use the display identifier in your user interface. Use identity_url for querying your database or authorization server, or other identifier equality comparisons.
+full_name: OpenID::Consumer::Response#display_identifier
+is_singleton: false
+name: display_identifier
+params: ()
+visibility: public

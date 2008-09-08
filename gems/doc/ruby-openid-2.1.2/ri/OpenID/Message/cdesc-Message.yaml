@@ -1,0 +1,74 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: namespaces
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_http_response
+- !ruby/object:RI::MethodSummary 
+  name: from_kvform
+- !ruby/object:RI::MethodSummary 
+  name: from_openid_args
+- !ruby/object:RI::MethodSummary 
+  name: from_post_args
+- !ruby/object:RI::MethodSummary 
+  name: new
+- !ruby/object:RI::MethodSummary 
+  name: register_namespace_alias
+comment: 
+constants: []
+
+full_name: OpenID::Message
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: ==
+- !ruby/object:RI::MethodSummary 
+  name: _fix_ns
+- !ruby/object:RI::MethodSummary 
+  name: _from_openid_args
+- !ruby/object:RI::MethodSummary 
+  name: _get_default_namespace
+- !ruby/object:RI::MethodSummary 
+  name: copy
+- !ruby/object:RI::MethodSummary 
+  name: del_arg
+- !ruby/object:RI::MethodSummary 
+  name: get_aliased_arg
+- !ruby/object:RI::MethodSummary 
+  name: get_arg
+- !ruby/object:RI::MethodSummary 
+  name: get_args
+- !ruby/object:RI::MethodSummary 
+  name: get_key
+- !ruby/object:RI::MethodSummary 
+  name: get_openid_namespace
+- !ruby/object:RI::MethodSummary 
+  name: has_key?
+- !ruby/object:RI::MethodSummary 
+  name: is_openid1
+- !ruby/object:RI::MethodSummary 
+  name: is_openid2
+- !ruby/object:RI::MethodSummary 
+  name: set_arg
+- !ruby/object:RI::MethodSummary 
+  name: set_openid_namespace
+- !ruby/object:RI::MethodSummary 
+  name: to_args
+- !ruby/object:RI::MethodSummary 
+  name: to_form_markup
+- !ruby/object:RI::MethodSummary 
+  name: to_kvform
+- !ruby/object:RI::MethodSummary 
+  name: to_post_args
+- !ruby/object:RI::MethodSummary 
+  name: to_url
+- !ruby/object:RI::MethodSummary 
+  name: to_url_encoded
+- !ruby/object:RI::MethodSummary 
+  name: update_args
+name: Message
+superclass: Object

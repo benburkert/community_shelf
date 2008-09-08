@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Given a namespace mapping and a string containing a comma-separated list of namespace aliases, return a list of type URIs that correspond to those aliases. namespace_map: OpenID::NamespaceMap"
+full_name: OpenID::AX::to_type_uris
+is_singleton: true
+name: to_type_uris
+params: (namespace_map, alias_list_s)
+visibility: public

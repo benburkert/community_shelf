@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Util::seq_to_kv
+is_singleton: true
+name: seq_to_kv
+params: (seq, strict=false)
+visibility: public

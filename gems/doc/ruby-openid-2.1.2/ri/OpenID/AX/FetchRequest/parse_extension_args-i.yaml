@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::AX::FetchRequest#parse_extension_args
+is_singleton: false
+name: parse_extension_args
+params: (ax_args)
+visibility: public

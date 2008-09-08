@@ -1,0 +1,18 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: []
+
+full_name: DataMapper::Is::Permalink::InstanceMethods
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: create_permalink!
+- !ruby/object:RI::MethodSummary 
+  name: to_param
+name: InstanceMethods
+superclass: 

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::IdResHandler#verify_discovery_results_openid2
+is_singleton: false
+name: verify_discovery_results_openid2
+params: ()
+visibility: protected

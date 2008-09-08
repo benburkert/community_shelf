@@ -1,0 +1,40 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: auth_policies
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: auth_time
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: nist_auth_level
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: ns_alias
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_success_response
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A Provider Authentication Policy response, sent from a provider to a relying party
+constants: []
+
+full_name: OpenID::PAPE::Response
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: add_policy_uri
+- !ruby/object:RI::MethodSummary 
+  name: get_extension_args
+- !ruby/object:RI::MethodSummary 
+  name: parse_extension_args
+name: Response
+superclass: Extension

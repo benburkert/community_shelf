@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Handle a request.
+- !ruby/struct:SM::Flow::P 
+  body: Give me a request, I will give you a response. Unless it's a type of request I cannot handle myself, in which case I will raise RuntimeError. In that case, you can handle it yourself, or add a method to me for handling that request type.
+full_name: OpenID::Server::Server#handle_request
+is_singleton: false
+name: handle_request
+params: (request)
+visibility: public

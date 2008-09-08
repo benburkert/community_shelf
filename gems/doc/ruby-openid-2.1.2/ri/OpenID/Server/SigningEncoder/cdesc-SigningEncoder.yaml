@@ -1,0 +1,22 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: signatory
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: I encode responses in to WebResponses, signing them when required.
+constants: []
+
+full_name: OpenID::Server::SigningEncoder
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: encode
+name: SigningEncoder
+superclass: Encoder

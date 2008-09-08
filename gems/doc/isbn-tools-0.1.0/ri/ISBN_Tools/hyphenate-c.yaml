@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: This method takes an ISBN then tries to hyphenate it as an ISBN 10 then an ISBN 13. A bit slower than calling the right one directly but saves you the length checking. Returns an hyphenated value or nil.
+full_name: ISBN_Tools::hyphenate
+is_singleton: true
+name: hyphenate
+params: (isbn_)
+visibility: public

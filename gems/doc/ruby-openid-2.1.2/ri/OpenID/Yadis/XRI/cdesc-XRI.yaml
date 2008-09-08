@@ -1,0 +1,39 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: append_args
+- !ruby/object:RI::MethodSummary 
+  name: escape_for_iri
+- !ruby/object:RI::MethodSummary 
+  name: identifier_scheme
+- !ruby/object:RI::MethodSummary 
+  name: iri_to_uri
+- !ruby/object:RI::MethodSummary 
+  name: make_xri
+- !ruby/object:RI::MethodSummary 
+  name: provider_is_authoritative
+- !ruby/object:RI::MethodSummary 
+  name: root_authority
+- !ruby/object:RI::MethodSummary 
+  name: to_iri_normal
+- !ruby/object:RI::MethodSummary 
+  name: to_uri_normal
+- !ruby/object:RI::MethodSummary 
+  name: urlencode
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The '(' is for cross-reference authorities, and hopefully has a matching ')' somewhere.
+  name: XRI_AUTHORITIES
+  value: "[\"!\", \"=\", \"@\", \"+\", \"$\", \"(\"]"
+full_name: OpenID::Yadis::XRI
+includes: []
+
+instance_methods: []
+
+name: XRI
+superclass: 

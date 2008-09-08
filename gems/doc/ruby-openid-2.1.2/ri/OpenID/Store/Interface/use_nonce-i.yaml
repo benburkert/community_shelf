@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Return true if the nonce has not been used before, and store it for a while to make sure someone doesn't try to use the same value again. Return false if the nonce has already been used or if the timestamp is not current. You can use OpenID::Store::Nonce::SKEW for your timestamp window. server_url: URL of the server from which the nonce originated timestamp: time the nonce was created in seconds since unix epoch salt: A random string that makes two nonces issued by a server in"
+- !ruby/struct:SM::Flow::VERB 
+  body: "      the same second unique\n"
+full_name: OpenID::Store::Interface#use_nonce
+is_singleton: false
+name: use_nonce
+params: (server_url, timestamp, salt)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Add a single value for the given attribute type to the message. If there are already values specified for this type, this value will be sent in addition to the values already specified.
+full_name: OpenID::AX::KeyValueMessage#add_value
+is_singleton: false
+name: add_value
+params: (type_uri, value)
+visibility: public

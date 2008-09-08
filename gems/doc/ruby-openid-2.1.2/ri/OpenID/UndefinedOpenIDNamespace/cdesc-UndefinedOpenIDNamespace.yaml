@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raised if the generic OpenID namespace is accessed when there is no OpenID namespace set for this message.
+constants: []
+
+full_name: OpenID::UndefinedOpenIDNamespace
+includes: []
+
+instance_methods: []
+
+name: UndefinedOpenIDNamespace
+superclass: Exception

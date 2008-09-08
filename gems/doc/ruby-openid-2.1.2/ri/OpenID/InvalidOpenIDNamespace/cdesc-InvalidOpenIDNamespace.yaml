@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raised if openid.ns is not a recognized value. See Message class variable @@allowed_openid_namespaces
+constants: []
+
+full_name: OpenID::InvalidOpenIDNamespace
+includes: []
+
+instance_methods: []
+
+name: InvalidOpenIDNamespace
+superclass: Exception

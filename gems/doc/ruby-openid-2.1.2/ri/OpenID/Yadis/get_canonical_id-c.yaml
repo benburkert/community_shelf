@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::get_canonical_id
+is_singleton: true
+name: get_canonical_id
+params: (iname, xrd_tree)
+visibility: public

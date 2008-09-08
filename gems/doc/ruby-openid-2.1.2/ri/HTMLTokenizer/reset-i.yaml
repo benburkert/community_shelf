@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Reset the parser, setting the current position back at the stop
+full_name: HTMLTokenizer#reset
+is_singleton: false
+name: reset
+params: ()
+visibility: public

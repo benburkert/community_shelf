@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#complete_setup_needed
+is_singleton: false
+name: complete_setup_needed
+params: (message, unused_return_to)
+visibility: protected

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Store::Memory#remove_association
+is_singleton: false
+name: remove_association
+params: (server_url, handle)
+visibility: public

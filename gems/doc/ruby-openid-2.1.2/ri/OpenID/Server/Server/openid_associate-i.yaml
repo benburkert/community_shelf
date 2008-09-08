@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Handle and respond to associate requests.
+full_name: OpenID::Server::Server#openid_associate
+is_singleton: false
+name: openid_associate
+params: (request)
+visibility: public

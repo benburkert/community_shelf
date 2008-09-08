@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Remove expired associations from the store Not called during normal library operation, this method is for store admins to keep their storage from filling up with expired data
+full_name: OpenID::Store::Interface#cleanup_associations
+is_singleton: false
+name: cleanup_associations
+params: ()
+visibility: public

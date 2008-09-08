@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: I can fetch through a HTTP proxy; arguments are as for Net::HTTP::Proxy.
+full_name: OpenID::StandardFetcher::new
+is_singleton: true
+name: new
+params: (proxy_addr=nil, proxy_port=nil, proxy_user=nil, proxy_pass=nil)
+visibility: public

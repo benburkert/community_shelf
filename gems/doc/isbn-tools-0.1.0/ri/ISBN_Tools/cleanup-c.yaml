@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Clear all useless characters from an ISBN number and upcase the 'X' sign when present. Also does the basic check that 'X' must be the last sign of the number, if present. Returns nil if provided string is nil or X is not at the last position.
+- !ruby/struct:SM::Flow::P 
+  body: "No length check is done: no matter what string is passed in, all characters that not in the range [0-9xX] are removed."
+full_name: ISBN_Tools::cleanup
+is_singleton: true
+name: cleanup
+params: (isbn_)
+visibility: public

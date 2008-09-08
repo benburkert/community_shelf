@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::Signatory::_dumb_key
+is_singleton: true
+name: _dumb_key
+params: ()
+visibility: public

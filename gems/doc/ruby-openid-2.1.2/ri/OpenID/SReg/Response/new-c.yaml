@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::SReg::Response::new
+is_singleton: true
+name: new
+params: (data = {}, ns_uri=NS_URI)
+visibility: public

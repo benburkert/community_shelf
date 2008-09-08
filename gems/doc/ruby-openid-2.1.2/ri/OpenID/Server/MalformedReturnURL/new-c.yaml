@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::MalformedReturnURL::new
+is_singleton: true
+name: new
+params: (openid_message, return_to)
+visibility: public

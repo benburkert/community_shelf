@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Parse the unqualified simple registration request parameters and add them to this object.
+- !ruby/struct:SM::Flow::P 
+  body: This method is essentially the inverse of getExtensionArgs. This method restores the serialized simple registration request fields.
+- !ruby/struct:SM::Flow::P 
+  body: If you are extracting arguments from a standard OpenID checkid_* request, you probably want to use fromOpenIDRequest, which will extract the sreg namespace and arguments from the OpenID request. This method is intended for cases where the OpenID server needs more control over how the arguments are parsed than that method provides.
+full_name: OpenID::SReg::Request#parse_extension_args
+is_singleton: false
+name: parse_extension_args
+params: (args, strict = false)
+visibility: public

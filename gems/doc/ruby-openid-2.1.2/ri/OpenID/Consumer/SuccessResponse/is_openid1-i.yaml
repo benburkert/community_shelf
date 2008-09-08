@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Was this authentication response an OpenID 1 authentication response?
+full_name: OpenID::Consumer::SuccessResponse#is_openid1
+is_singleton: false
+name: is_openid1
+params: ()
+visibility: public

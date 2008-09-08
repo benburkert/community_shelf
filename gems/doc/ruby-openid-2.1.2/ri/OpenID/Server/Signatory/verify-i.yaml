@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Verify that the signature for some data is valid.
+full_name: OpenID::Server::Signatory#verify
+is_singleton: false
+name: verify
+params: (assoc_handle, message)
+visibility: public

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>set_key (HMAC::Base)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/hmac/hmac.rb, line 35</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_key</span>(<span class="ruby-identifier">key</span>)
+      <span class="ruby-comment cmt"># If key is longer than the block size, apply hash function</span>
+      <span class="ruby-comment cmt"># to key and use the result as a real key.</span>
+      <span class="ruby-identifier">key</span> = <span class="ruby-ivar">@algorithm</span>.<span class="ruby-identifier">digest</span>(<span class="ruby-identifier">key</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@block_size</span>
+      <span class="ruby-identifier">key_xor_ipad</span> = <span class="ruby-value str">&quot;\x36&quot;</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@block_size</span>
+      <span class="ruby-identifier">key_xor_opad</span> = <span class="ruby-value str">&quot;\x5C&quot;</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@block_size</span>
+      <span class="ruby-keyword kw">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword kw">in</span> <span class="ruby-value">0</span> <span class="ruby-operator">..</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+        <span class="ruby-identifier">key_xor_ipad</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">^=</span> <span class="ruby-identifier">key</span>[<span class="ruby-identifier">i</span>]
+        <span class="ruby-identifier">key_xor_opad</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">^=</span> <span class="ruby-identifier">key</span>[<span class="ruby-identifier">i</span>]
+      <span class="ruby-keyword kw">end</span>
+      <span class="ruby-ivar">@key_xor_ipad</span> = <span class="ruby-identifier">key_xor_ipad</span>
+      <span class="ruby-ivar">@key_xor_opad</span> = <span class="ruby-identifier">key_xor_opad</span>
+      <span class="ruby-ivar">@md</span> = <span class="ruby-ivar">@algorithm</span>.<span class="ruby-identifier">new</span>
+      <span class="ruby-ivar">@status</span> = <span class="ruby-constant">STATUS_INITIALIZED</span>
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

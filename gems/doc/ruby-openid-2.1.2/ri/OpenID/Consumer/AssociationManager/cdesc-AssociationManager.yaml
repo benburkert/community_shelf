@@ -1,0 +1,35 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: create_session
+- !ruby/object:RI::MethodSummary 
+  name: extract_expires_in
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An object that manages creating and storing associations for an OpenID provider endpoint
+constants: []
+
+full_name: OpenID::Consumer::AssociationManager
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: create_associate_request
+- !ruby/object:RI::MethodSummary 
+  name: extract_association
+- !ruby/object:RI::MethodSummary 
+  name: extract_supported_association_type
+- !ruby/object:RI::MethodSummary 
+  name: get_association
+- !ruby/object:RI::MethodSummary 
+  name: get_openid1_session_type
+- !ruby/object:RI::MethodSummary 
+  name: negotiate_association
+- !ruby/object:RI::MethodSummary 
+  name: request_association
+name: AssociationManager
+superclass: Object

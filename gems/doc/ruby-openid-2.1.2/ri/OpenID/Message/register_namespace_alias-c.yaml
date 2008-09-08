@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Registers a (namespace URI, alias) mapping in a global namespace alias map. Raises NamespaceAliasRegistrationError if either the namespace URI or alias has already been registered with a different value. This function is required if you want to use a namespace with an OpenID 1 message.
+full_name: OpenID::Message::register_namespace_alias
+is_singleton: true
+name: register_namespace_alias
+params: (namespace_uri, alias_)
+visibility: public

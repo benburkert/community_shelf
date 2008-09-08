@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#cleanup_last_requested_endpoint
+is_singleton: false
+name: cleanup_last_requested_endpoint
+params: ()
+visibility: protected

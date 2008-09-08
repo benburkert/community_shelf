@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::parse_link_attrs
+is_singleton: true
+name: parse_link_attrs
+params: (html)
+visibility: public

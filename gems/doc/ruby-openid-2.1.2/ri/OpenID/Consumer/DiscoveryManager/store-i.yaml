@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::DiscoveryManager#store
+is_singleton: false
+name: store
+params: (manager)
+visibility: protected

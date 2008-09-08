@@ -1,0 +1,39 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: check_timestamp
+- !ruby/object:RI::MethodSummary 
+  name: mk_nonce
+- !ruby/object:RI::MethodSummary 
+  name: skew
+- !ruby/object:RI::MethodSummary 
+  name: skew=
+- !ruby/object:RI::MethodSummary 
+  name: split_nonce
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: DEFAULT_SKEW
+  value: 60*60*5
+- !ruby/object:RI::Constant 
+  comment: 
+  name: TIME_FMT
+  value: "'%Y-%m-%dT%H:%M:%SZ'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: TIME_STR_LEN
+  value: "'0000-00-00T00:00:00Z'.size"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: TIME_VALIDATOR
+  value: /\d\d\d\d-\d\d-\d\dT\d\d:\d\d:\d\dZ/
+full_name: OpenID::Nonce
+includes: []
+
+instance_methods: []
+
+name: Nonce
+superclass: 

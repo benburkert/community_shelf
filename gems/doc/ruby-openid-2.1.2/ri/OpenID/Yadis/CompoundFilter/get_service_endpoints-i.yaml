@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generate all endpoint objects for all of the subfilters of this filter and return their concatenation.
+full_name: OpenID::Yadis::CompoundFilter#get_service_endpoints
+is_singleton: false
+name: get_service_endpoints
+params: (yadis_url, service_element)
+visibility: public

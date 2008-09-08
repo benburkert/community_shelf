@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Create an Association with an issued time of now
+full_name: OpenID::Association::from_expires_in
+is_singleton: true
+name: from_expires_in
+params: (expires_in, handle, secret, assoc_type)
+visibility: public

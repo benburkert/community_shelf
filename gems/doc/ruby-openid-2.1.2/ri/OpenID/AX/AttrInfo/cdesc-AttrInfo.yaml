@@ -1,0 +1,58 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: count
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: ns_alias
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: required
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: type_uri
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Represents a single attribute in an attribute exchange request. This should be added to an Request object in order to request the attribute.
+- !ruby/struct:SM::Flow::P 
+  body: "@ivar required: Whether the attribute will be marked as required"
+- !ruby/struct:SM::Flow::VERB 
+  body: "    when presented to the subject of the attribute exchange\n    request.\n"
+- !ruby/struct:SM::Flow::P 
+  body: "@type required: bool"
+- !ruby/struct:SM::Flow::P 
+  body: "@ivar count: How many values of this type to request from the"
+- !ruby/struct:SM::Flow::VERB 
+  body: "     subject. Defaults to one.\n"
+- !ruby/struct:SM::Flow::P 
+  body: "@type count: int"
+- !ruby/struct:SM::Flow::P 
+  body: "@ivar type_uri: The identifier that determines what the attribute"
+- !ruby/struct:SM::Flow::VERB 
+  body: "     represents and how it is serialized. For example, one type URI\n     representing dates could represent a Unix timestamp in base 10\n     and another could represent a human-readable string.\n"
+- !ruby/struct:SM::Flow::P 
+  body: "@type type_uri: str"
+- !ruby/struct:SM::Flow::P 
+  body: "@ivar ns_alias: The name that should be given to this alias in the"
+- !ruby/struct:SM::Flow::VERB 
+  body: "     request. If it is not supplied, a generic name will be\n     assigned. For example, if you want to call a Unix timestamp\n     value 'tstamp', set its alias to that value. If two attributes\n     in the same message request to use the same alias, the request\n     will fail to be generated.\n"
+- !ruby/struct:SM::Flow::P 
+  body: "@type alias: str or NoneType"
+constants: []
+
+full_name: OpenID::AX::AttrInfo
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: wants_unlimited_values?
+name: AttrInfo
+superclass: Object

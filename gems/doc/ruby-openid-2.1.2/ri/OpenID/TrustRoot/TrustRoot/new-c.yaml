@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::TrustRoot::TrustRoot::new
+is_singleton: true
+name: new
+params: (unparsed, proto, wildcard, host, port, path)
+visibility: public

@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A Diffie-Hellman association session that uses SHA1 as its hash function
+constants: []
+
+full_name: OpenID::Consumer::DiffieHellmanSHA1Session
+includes: []
+
+instance_methods: []
+
+name: DiffieHellmanSHA1Session
+superclass: DiffieHellmanSession

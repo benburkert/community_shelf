@@ -1,0 +1,20 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: "Request the specified field from the OpenID user field_name: the unqualified simple registration field name required: whether the given field should be presented"
+- !ruby/struct:SM::Flow::VERB 
+  body: "       to the user as being a required to successfully complete\n       the request\n"
+- !ruby/struct:SM::Flow::P 
+  body: "strict: whether to raise an exception when a field is"
+- !ruby/struct:SM::Flow::VERB 
+  body: "       added to a request more than once\n"
+- !ruby/struct:SM::Flow::P 
+  body: Raises ArgumentError if the field_name is not a simple registration field, or if strict is set and a field is added more than once
+full_name: OpenID::SReg::Request#request_field
+is_singleton: false
+name: request_field
+params: (field_name, required=false, strict=false)
+visibility: public

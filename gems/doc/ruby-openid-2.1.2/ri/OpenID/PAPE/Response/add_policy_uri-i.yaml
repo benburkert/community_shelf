@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Add a policy URI to the response see http://openid.net/specs/openid-provider-authentication-policy-extension-1_0-01.html#auth_policies
+full_name: OpenID::PAPE::Response#add_policy_uri
+is_singleton: false
+name: add_policy_uri
+params: (policy_uri)
+visibility: public

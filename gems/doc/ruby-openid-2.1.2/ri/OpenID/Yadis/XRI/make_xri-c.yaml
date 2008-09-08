@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::XRI::make_xri
+is_singleton: true
+name: make_xri
+params: (xri)
+visibility: public

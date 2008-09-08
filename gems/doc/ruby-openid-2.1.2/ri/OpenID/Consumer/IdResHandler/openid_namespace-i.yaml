@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::IdResHandler#openid_namespace
+is_singleton: false
+name: openid_namespace
+params: ()
+visibility: protected

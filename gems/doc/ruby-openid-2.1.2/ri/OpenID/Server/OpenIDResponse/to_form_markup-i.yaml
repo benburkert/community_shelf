@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: form_tag_attrs is a hash of attributes to be added to the form tag. 'accept-charset' and 'enctype' have defaults that can be overridden. If a value is supplied for 'action' or 'method', it will be replaced. Returns the form markup for this response.
+full_name: OpenID::Server::OpenIDResponse#to_form_markup
+is_singleton: false
+name: to_form_markup
+params: (form_tag_attrs=nil)
+visibility: public

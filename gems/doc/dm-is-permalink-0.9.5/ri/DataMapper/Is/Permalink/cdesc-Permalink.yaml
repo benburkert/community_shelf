@@ -1,0 +1,23 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: included
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: VERSION
+  value: "\"0.9.5\""
+full_name: DataMapper::Is::Permalink
+includes: 
+- !ruby/object:RI::IncludedModule 
+  name: InstanceMethods
+- !ruby/object:RI::IncludedModule 
+  name: DataMapper::Is::Permalink::InstanceMethods
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: is_permalink
+name: Permalink
+superclass: 

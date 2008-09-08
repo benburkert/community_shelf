@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Instantiate a Request object from the arguments in a checkid_* OpenID message return nil if the extension was not requested.
+full_name: OpenID::PAPE::Request::from_openid_request
+is_singleton: true
+name: from_openid_request
+params: (oid_req)
+visibility: public

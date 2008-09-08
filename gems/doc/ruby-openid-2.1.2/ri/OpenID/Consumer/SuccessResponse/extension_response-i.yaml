@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Return response arguments in the specified namespace. If require_signed is true and the arguments are not signed, return nil.
+full_name: OpenID::Consumer::SuccessResponse#extension_response
+is_singleton: false
+name: extension_response
+params: (namespace_uri, require_signed)
+visibility: public

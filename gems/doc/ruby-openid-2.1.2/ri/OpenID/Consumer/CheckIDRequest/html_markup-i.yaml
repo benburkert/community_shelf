@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get a complete HTML document that autosubmits the request to the IDP with javascript. This method wraps form_markup - see that method's documentation for help with the parameters.
+full_name: OpenID::Consumer::CheckIDRequest#html_markup
+is_singleton: false
+name: html_markup
+params: (realm, return_to=nil, immediate=false, form_tag_attrs=nil)
+visibility: public

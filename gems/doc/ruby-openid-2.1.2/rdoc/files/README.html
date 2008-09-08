@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Tue Aug 05 15:53:05 -0500 2008</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <h1>Ruby <a href="../classes/OpenID.html">OpenID</a></h1>
+<p>
+A Ruby library for verifying and serving <a
+href="../classes/OpenID.html">OpenID</a> identities.
+</p>
+<h2>Features</h2>
+<ul>
+<li>Easy to use API for verifying <a href="../classes/OpenID.html">OpenID</a>
+identites - <a href="../classes/OpenID/Consumer.html">OpenID::Consumer</a>
+
+</li>
+<li>Support for serving <a href="../classes/OpenID.html">OpenID</a> identites -
+<a href="../classes/OpenID/Server.html">OpenID::Server</a>
+
+</li>
+<li>Does not depend on underlying web framework
+
+</li>
+<li>Supports multiple storage mechanisms (Filesystem, ActiveRecord, Memory)
+
+</li>
+<li>Example code to help you get started, including:
+
+<ul>
+<li>Ruby on Rails based consumer and server
+
+</li>
+<li>OpenIDLoginGenerator for quickly getting creating a rails app that uses <a
+href="../classes/OpenID.html">OpenID</a> for authentication
+
+</li>
+<li>ActiveRecordOpenIDStore plugin
+
+</li>
+</ul>
+</li>
+<li>Comprehensive test suite
+
+</li>
+<li>Supports both <a href="../classes/OpenID.html">OpenID</a> 1 and <a
+href="../classes/OpenID.html">OpenID</a> 2 transparently
+
+</li>
+</ul>
+<h2>Installing</h2>
+<p>
+Before running the examples or writing your own code you&#8216;ll need to
+install the library. See the INSTALL file or use rubygems:
+</p>
+<pre>
+  gem install ruby-openid
+</pre>
+<p>
+Check the installation:
+</p>
+<pre>
+  $ irb
+  irb&gt; require 'rubygems'
+  irb&gt; require_gem 'ruby-openid'
+  =&gt; true
+</pre>
+<p>
+The library is known to work with Ruby 1.8.4 on Unix, Max OSX and Win32.
+Examples have been tested with Rails 1.1 and 1.2, and 2.0.
+</p>
+<h2>Getting Started</h2>
+<p>
+The best way to start is to look at the rails_openid example. You can run
+it with:
+</p>
+<pre>
+ cd examples/rails_openid
+ script/server
+</pre>
+<p>
+If you are writing an <a href="../classes/OpenID.html">OpenID</a> Relying
+Party, a good place to start is:
+examples/rails_openid/app/controllers/consumer_controller.rb
+</p>
+<p>
+And if you are writing an <a href="../classes/OpenID.html">OpenID</a>
+provider: examples/rails_openid/app/controllers/server_controller.rb
+</p>
+<p>
+The library code is quite well documented, so don&#8216;t be squeamish, and
+look at the library itself if there&#8216;s anything you don&#8216;t
+understand in the examples.
+</p>
+<h2>Homepage</h2>
+<p>
+<a
+href="http://openidenabled.com/ruby-openid">openidenabled.com/ruby-openid</a>/
+</p>
+<p>
+See also: <a href="http://openid.net">openid.net</a>/ <a
+href="http://openidenabled.com">openidenabled.com</a>/
+</p>
+<h2>Community</h2>
+<p>
+Discussion regarding the Ruby <a href="../classes/OpenID.html">OpenID</a>
+library and other JanRain <a href="../classes/OpenID.html">OpenID</a>
+libraries takes place on the the <a
+href="../classes/OpenID.html">OpenID</a> mailing list on openidenabled.com.
+</p>
+<p>
+<a
+href="http://lists.openidenabled.com/mailman/listinfo/dev">lists.openidenabled.com/mailman/listinfo/dev</a>
+</p>
+<p>
+Please join this list to discuss, ask implementation questions, report
+bugs, etc. Also check out the openid channel on the freenode IRC network.
+</p>
+<p>
+If you have a bugfix or feature you&#8216;d like to contribute, don&#8216;t
+hesitate to send it to us. For more detailed information on how to
+contribute, see
+</p>
+<pre>
+  http://openidenabled.com/contribute/
+</pre>
+<h2>Author</h2>
+<p>
+Copyright 2006-2008, JanRain, Inc.
+</p>
+<p>
+Contact openid@janrain.com or visit the <a
+href="../classes/OpenID.html">OpenID</a> channel on pibb.com:
+</p>
+<p>
+<a href="http://pibb.com/go/openid">pibb.com/go/openid</a>
+</p>
+<h2>License</h2>
+<p>
+Apache Software License. For more information see the LICENSE file.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

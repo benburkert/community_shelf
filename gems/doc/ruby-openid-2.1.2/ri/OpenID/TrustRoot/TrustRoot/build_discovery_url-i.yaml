@@ -1,0 +1,24 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Return a discovery URL for this realm.
+- !ruby/struct:SM::Flow::P 
+  body: This function does not check to make sure that the realm is valid. Its behaviour on invalid inputs is undefined.
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "return_to:"
+    body: The relying party return URL of the OpenID
+  type: :NOTE
+- !ruby/struct:SM::Flow::P 
+  body: authentication request
+- !ruby/struct:SM::Flow::P 
+  body: Returns the URL upon which relying party discovery should be run in order to verify the return_to URL
+full_name: OpenID::TrustRoot::TrustRoot#build_discovery_url
+is_singleton: false
+name: build_discovery_url
+params: ()
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Retrieve a hash of all the tag's attributes. Lazily done, so that if you don't look at a tag's attributes things go quicker
+full_name: HTMLTag#attr_hash
+is_singleton: false
+name: attr_hash
+params: ()
+visibility: public

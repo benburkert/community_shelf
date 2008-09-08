@@ -1,0 +1,5 @@
+* Move to mauth for the OpenID authentication.
+* Figure out the ISBN algorithm so that valid ISBNs can be generated.
+* Look into using will_paginate's agnostic branch for pagination.
+* Work with the new merb-cache.
+* add a README.

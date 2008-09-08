@@ -1,0 +1,20 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: I represent an incoming OpenID request.
+- !ruby/struct:SM::Flow::P 
+  body: "Attributes:"
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "mode:"
+    body: The &quot;openid.mode&quot; of this request
+  type: :NOTE
+full_name: OpenID::Server::OpenIDRequest::new
+is_singleton: true
+name: new
+params: ()
+visibility: public

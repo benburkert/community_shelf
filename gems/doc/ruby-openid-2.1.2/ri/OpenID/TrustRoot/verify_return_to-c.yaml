@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Verify that a return_to URL is valid for the given realm.
+- !ruby/struct:SM::Flow::P 
+  body: This function builds a discovery URL, performs Yadis discovery on it, makes sure that the URL does not redirect, parses out the return_to URLs, and finally checks to see if the current return_to URL matches the return_to.
+- !ruby/struct:SM::Flow::P 
+  body: raises DiscoveryFailure when Yadis discovery fails returns true if the return_to URL is valid for the realm
+full_name: OpenID::TrustRoot::verify_return_to
+is_singleton: true
+name: verify_return_to
+params: (realm_str, return_to, _vrfy=nil)
+visibility: public

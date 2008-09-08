@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::DiffieHellmanSession::new
+is_singleton: true
+name: new
+params: (dh=nil)
+visibility: public

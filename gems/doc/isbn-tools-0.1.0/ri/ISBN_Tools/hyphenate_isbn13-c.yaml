@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Hyphenate a valid ISBN-13 number. Returns nil if the number is invalid or if the group range is unknown. Works only for groups 0,1 and 2.
+full_name: ISBN_Tools::hyphenate_isbn13
+is_singleton: true
+name: hyphenate_isbn13
+params: (isbn_)
+visibility: public

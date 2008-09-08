@@ -1,0 +1,46 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The association handle the response was signed with.
+  name: assoc_handle
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: An association handle the client is asking about the validity of. May be nil.
+  name: invalidate_handle
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: sig
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The message with the signature which wants checking.
+  name: signed
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_message
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A request to verify the validity of a previous response.
+- !ruby/struct:SM::Flow::P 
+  body: See OpenID Specs, Verifying Directly with the OpenID Provider &lt;http://openid.net/specs/openid-authentication-2_0-12.html#verifying_signatures&gt;
+constants: []
+
+full_name: OpenID::Server::CheckAuthRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: answer
+- !ruby/object:RI::MethodSummary 
+  name: to_s
+name: CheckAuthRequest
+superclass: OpenIDRequest

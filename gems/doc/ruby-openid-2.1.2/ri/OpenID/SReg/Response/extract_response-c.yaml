@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Take a Request and a hash of simple registration values and create a Response object containing that data.
+full_name: OpenID::SReg::Response::extract_response
+is_singleton: true
+name: extract_response
+params: (request, data)
+visibility: public

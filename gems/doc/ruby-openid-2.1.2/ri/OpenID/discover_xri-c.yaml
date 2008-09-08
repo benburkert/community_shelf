@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::discover_xri
+is_singleton: true
+name: discover_xri
+params: (iname)
+visibility: public

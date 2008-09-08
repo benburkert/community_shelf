@@ -1,0 +1,25 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: check_alias
+- !ruby/object:RI::MethodSummary 
+  name: to_type_uris
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: UNLIMITED_VALUES
+  value: "\"unlimited\""
+- !ruby/object:RI::Constant 
+  comment: 
+  name: MINIMUM_SUPPORTED_ALIAS_LENGTH
+  value: "32"
+full_name: OpenID::AX
+includes: []
+
+instance_methods: []
+
+name: AX
+superclass: 

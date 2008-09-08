@@ -1,0 +1,44 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The number of seconds a secret remains valid. Defaults to 14 days.
+  name: secret_lifetime
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: store
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: _dumb_key
+- !ruby/object:RI::MethodSummary 
+  name: _normal_key
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: I sign things.
+- !ruby/struct:SM::Flow::P 
+  body: I also check signatures.
+- !ruby/struct:SM::Flow::P 
+  body: All my state is encapsulated in a store, which means I'm not generally pickleable but I am easy to reconstruct.
+constants: []
+
+full_name: OpenID::Server::Signatory
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: create_association
+- !ruby/object:RI::MethodSummary 
+  name: get_association
+- !ruby/object:RI::MethodSummary 
+  name: invalidate
+- !ruby/object:RI::MethodSummary 
+  name: sign
+- !ruby/object:RI::MethodSummary 
+  name: verify
+name: Signatory
+superclass: Object

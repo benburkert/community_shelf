@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: raise ArgumentError if fieldname is not in the defined sreg fields
+full_name: OpenID::check_sreg_field_name
+is_singleton: true
+name: check_sreg_field_name
+params: (fieldname)
+visibility: public

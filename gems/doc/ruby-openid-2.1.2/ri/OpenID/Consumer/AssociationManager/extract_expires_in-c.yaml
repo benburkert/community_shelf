@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::AssociationManager::extract_expires_in
+is_singleton: true
+name: extract_expires_in
+params: (message)
+visibility: protected

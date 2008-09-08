@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: fired when your plugin gets included into Resource
+full_name: DataMapper::Is::Permalink::included
+is_singleton: true
+name: included
+params: (base)
+visibility: public

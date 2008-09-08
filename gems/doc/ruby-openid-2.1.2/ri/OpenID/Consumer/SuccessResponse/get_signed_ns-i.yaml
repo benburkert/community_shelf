@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get signed arguments from the response message. Return a dict of all arguments in the specified namespace. If any of the arguments are not signed, return nil.
+full_name: OpenID::Consumer::SuccessResponse#get_signed_ns
+is_singleton: false
+name: get_signed_ns
+params: (ns_uri)
+visibility: public

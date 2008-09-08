@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generate a Message object for sending to the relying party, after encoding.
+full_name: OpenID::Server::ProtocolError#to_message
+is_singleton: false
+name: to_message
+params: ()
+visibility: public

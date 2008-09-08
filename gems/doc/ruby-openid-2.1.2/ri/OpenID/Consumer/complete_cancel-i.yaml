@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#complete_cancel
+is_singleton: false
+name: complete_cancel
+params: (unused_message, unused_return_to)
+visibility: protected

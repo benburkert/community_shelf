@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Initialize the filter maker's state
+- !ruby/struct:SM::Flow::P 
+  body: filter_functions are the endpoint transformer Procs to apply to the basic endpoint. These are called in turn until one of them does not return nil, and the result of that transformer is returned.
+full_name: OpenID::Yadis::TransformFilterMaker::new
+is_singleton: true
+name: new
+params: (filter_procs)
+visibility: public

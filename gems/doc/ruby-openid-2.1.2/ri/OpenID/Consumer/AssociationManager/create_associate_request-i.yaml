@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Create an association request for the given assoc_type and session_type. Returns a pair of the association session object and the request message that will be sent to the server.
+full_name: OpenID::Consumer::AssociationManager#create_associate_request
+is_singleton: false
+name: create_associate_request
+params: (assoc_type, session_type)
+visibility: protected

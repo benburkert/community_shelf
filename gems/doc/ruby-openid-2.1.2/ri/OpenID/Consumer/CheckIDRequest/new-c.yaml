@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Users of this library should not create instances of this class. Instances of this class are created by the library when needed.
+full_name: OpenID::Consumer::CheckIDRequest::new
+is_singleton: true
+name: new
+params: (assoc, endpoint)
+visibility: public

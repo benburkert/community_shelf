@@ -1,0 +1,33 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An in-memory implementation of Store. This class is mainly used for testing, though it may be useful for long-running single process apps. Note that this store is NOT thread-safe.
+- !ruby/struct:SM::Flow::P 
+  body: You should probably be looking at OpenID::Store::Filesystem
+constants: []
+
+full_name: OpenID::Store::Memory
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: cleanup_associations
+- !ruby/object:RI::MethodSummary 
+  name: cleanup_nonces
+- !ruby/object:RI::MethodSummary 
+  name: deepcopy
+- !ruby/object:RI::MethodSummary 
+  name: get_association
+- !ruby/object:RI::MethodSummary 
+  name: remove_association
+- !ruby/object:RI::MethodSummary 
+  name: store_association
+- !ruby/object:RI::MethodSummary 
+  name: use_nonce
+name: Memory
+superclass: Interface

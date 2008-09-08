@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Respond to this request indicating that the association type or association session type is not supported.
+full_name: OpenID::Server::AssociateRequest#answer_unsupported
+is_singleton: false
+name: answer_unsupported
+params: (message, preferred_association_type=nil, preferred_session_type=nil)
+visibility: public

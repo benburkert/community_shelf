@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the arguments that are defined for this namespace URI.
+full_name: OpenID::Message#get_args
+is_singleton: false
+name: get_args
+params: (namespace)
+visibility: public

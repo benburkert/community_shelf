@@ -1,0 +1,84 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: Provided in smart mode requests, a handle for a previously established association. nil for dumb mode requests.
+  name: assoc_handle
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The claimed identifier. Not present in OpenID 1.x messages.
+  name: claimed_id
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The OP-local identifier being checked.
+  name: identity
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: Is this an immediate-mode request?
+  name: immediate
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/object:SM::Flow::LIST 
+    contents: 
+    - !ruby/struct:SM::Flow::LI 
+      label: "mode:"
+      body: <tt>checkid_immediate</tt> or <tt>checkid_setup</tt>
+    type: :NOTE
+  name: mode
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: op_endpoint
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: The URL to send the user agent back to to reply to this request.
+  name: return_to
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  - !ruby/struct:SM::Flow::P 
+    body: This URL identifies the party making the request, and the user will use that to make her decision about what answer she trusts them to have. Referred to as &quot;realm&quot; in OpenID 2.0.
+  name: trust_root
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_message
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A request to confirm the identity of a user.
+- !ruby/struct:SM::Flow::P 
+  body: This class handles requests for openid modes <tt>checkid_immediate</tt> and <tt>checkid_setup</tt> .
+constants: []
+
+full_name: OpenID::Server::CheckIDRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: answer
+- !ruby/object:RI::MethodSummary 
+  name: cancel_url
+- !ruby/object:RI::MethodSummary 
+  name: encode_to_url
+- !ruby/object:RI::MethodSummary 
+  name: id_select
+- !ruby/object:RI::MethodSummary 
+  name: return_to_verified
+- !ruby/object:RI::MethodSummary 
+  name: to_s
+- !ruby/object:RI::MethodSummary 
+  name: trust_root_valid
+name: CheckIDRequest
+superclass: OpenIDRequest

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Computes the check digit of an ISBN-13 number. It will ignore the thirteenth sign if present and accepts a number with only 12 digits. Returns the checksum digit or nil. Please note that the checksum digit of an ISBN-13 is always in the range [0-9].
+full_name: ISBN_Tools::compute_isbn13_check_digit
+is_singleton: true
+name: compute_isbn13_check_digit
+params: (isbn_)
+visibility: public

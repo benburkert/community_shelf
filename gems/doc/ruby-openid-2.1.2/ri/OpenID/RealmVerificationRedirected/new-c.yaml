@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Attempting to verify this realm resulted in a redirect.
+full_name: OpenID::RealmVerificationRedirected::new
+is_singleton: true
+name: new
+params: (relying_party_url, rp_url_after_redirects)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Make and process one association request to this endpoint's OP endpoint URL. Returns an association object or nil if the association processing failed. Raises ServerError when the remote OpenID server returns an error.
+full_name: OpenID::Consumer::AssociationManager#request_association
+is_singleton: false
+name: request_association
+params: (assoc_type, session_type)
+visibility: protected

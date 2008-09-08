@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Decode a base64 byte string to a number.
+full_name: OpenID::CryptUtil::base64_to_num
+is_singleton: true
+name: base64_to_num
+params: (s)
+visibility: public

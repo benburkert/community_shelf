@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Wraps the form tag from to_form_markup in a complete HTML document that uses javascript to autosubmit the form.
+full_name: OpenID::Server::OpenIDResponse#to_html
+is_singleton: false
+name: to_html
+params: (form_tag_attrs=nil)
+visibility: public

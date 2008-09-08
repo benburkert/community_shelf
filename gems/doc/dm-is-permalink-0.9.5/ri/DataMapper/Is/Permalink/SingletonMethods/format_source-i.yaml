@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: DataMapper::Is::Permalink::SingletonMethods#format_source
+is_singleton: false
+name: format_source
+params: (s)
+visibility: public

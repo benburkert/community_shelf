@@ -1,0 +1,46 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: HTTP_OK
+  value: "200"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: HTTP_REDIRECT
+  value: "302"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: HTTP_ERROR
+  value: "400"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: BROWSER_REQUEST_MODES
+  value: "['checkid_setup', 'checkid_immediate']"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: ENCODE_KVFORM
+  value: "['kvform'].freeze"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: ENCODE_URL
+  value: "['URL/redirect'].freeze"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: ENCODE_HTML_FORM
+  value: "['HTML form'].freeze"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: UNUSED
+  value: nil
+full_name: OpenID::Server
+includes: []
+
+instance_methods: []
+
+name: Server
+superclass: 

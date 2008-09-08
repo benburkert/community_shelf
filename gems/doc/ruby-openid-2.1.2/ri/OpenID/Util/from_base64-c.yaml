@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Util::from_base64
+is_singleton: true
+name: from_base64
+params: (s)
+visibility: public

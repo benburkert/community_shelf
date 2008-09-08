@@ -1,0 +1,41 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Respond to this request.
+- !ruby/object:SM::Flow::LIST 
+  contents: 
+  - !ruby/struct:SM::Flow::LI 
+    label: "allow:"
+    body: Allow this user to claim this identity, and allow the consumer to have this information?
+  - !ruby/struct:SM::Flow::LI 
+    label: "server_url:"
+    body: "DEPRECATED. Passing op_endpoint to the #Server constructor makes this optional."
+  - !ruby/struct:SM::Flow::P 
+    body: When an OpenID 1.x immediate mode request does not succeed, it gets back a URL where the request may be carried out in a not-so-immediate fashion. Pass my URL in here (the fully qualified address of this server's endpoint, i.e. <tt>http://example.com/server</tt>), and I will use it as a base for the URL for a new request.
+  - !ruby/struct:SM::Flow::P 
+    body: "Optional for requests where #CheckIDRequest.immediate is false or <tt>allow</tt> is true."
+  - !ruby/struct:SM::Flow::LI 
+    label: "identity:"
+    body: The OP-local identifier to answer with. Only for use when the relying party requested identifier selection.
+  - !ruby/struct:SM::Flow::LI 
+    label: "claimed_id:"
+    body: The claimed identifier to answer with, for use with identifier selection in the case where the claimed identifier and the OP-local identifier differ, i.e. when the claimed_id uses delegation.
+  - !ruby/struct:SM::Flow::P 
+    body: If <tt>identity</tt> is provided but this is not, <tt>claimed_id</tt> will default to the value of <tt>identity</tt>. When answering requests that did not ask for identifier selection, the response <tt>claimed_id</tt> will default to that of the request.
+  - !ruby/struct:SM::Flow::P 
+    body: This parameter is new in OpenID 2.0.
+  type: :NOTE
+- !ruby/struct:SM::Flow::P 
+  body: Returns an OpenIDResponse object containing a OpenID id_res message.
+- !ruby/struct:SM::Flow::P 
+  body: Raises NoReturnToError if the return_to is missing.
+- !ruby/struct:SM::Flow::P 
+  body: Version 2.0 deprecates <tt>server_url</tt> and adds <tt>claimed_id</tt>.
+full_name: OpenID::Server::CheckIDRequest#answer
+is_singleton: false
+name: answer
+params: (allow, server_url=nil, identity=nil, claimed_id=nil)
+visibility: public

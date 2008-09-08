@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Did this request have a return_to parameter?
+full_name: OpenID::Server::ProtocolError#has_return_to
+is_singleton: false
+name: has_return_to
+params: ()
+visibility: public

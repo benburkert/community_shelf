@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::AssociationNegotiator#add_allowed_type
+is_singleton: false
+name: add_allowed_type
+params: (assoc_type, session_type=nil)
+visibility: public

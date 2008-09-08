@@ -1,0 +1,20 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Start the OpenID authentication process. See steps 1-2 in the overview for the Consumer class.
+- !ruby/struct:SM::Flow::P 
+  body: "user_url: Identity URL given by the user. This method performs a textual transformation of the URL to try and make sure it is normalized. For example, a user_url of example.com will be normalized to http://example.com/ normalizing and resolving any redirects the server might issue."
+- !ruby/struct:SM::Flow::P 
+  body: "anonymous: A boolean value. Whether to make an anonymous request of the OpenID provider. Such a request does not ask for an authorization assertion for an OpenID identifier, but may be used with extensions to pass other data. e.g. &quot;I don't care who you are, but I'd like to know your time zone.&quot;"
+- !ruby/struct:SM::Flow::P 
+  body: Returns a CheckIDRequest object containing the discovered information, with a method for building a redirect URL to the server, as described in step 3 of the overview. This object may also be used to add extension arguments to the request, using its add_extension_arg method.
+- !ruby/struct:SM::Flow::P 
+  body: Raises DiscoveryFailure when no OpenID server can be found for this URL.
+full_name: OpenID::Consumer#begin
+is_singleton: false
+name: begin
+params: (openid_identifier, anonymous=false)
+visibility: public

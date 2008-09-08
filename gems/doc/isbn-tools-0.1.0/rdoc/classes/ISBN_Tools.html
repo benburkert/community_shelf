@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: ISBN_Tools</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">ISBN_Tools</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/lib/isbn/tools_rb.html">
+                lib/isbn/tools.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+This module provides all the methods of the ISBN-Tools library. Methods
+have no state but the library reads the file data/ranges.dat and fills up
+the RNG hash when loaded.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000001">cleanup</a>&nbsp;&nbsp;
+      <a href="#M000002">cleanup!</a>&nbsp;&nbsp;
+      <a href="#M000008">compute_check_digit</a>&nbsp;&nbsp;
+      <a href="#M000006">compute_isbn10_check_digit</a>&nbsp;&nbsp;
+      <a href="#M000007">compute_isbn13_check_digit</a>&nbsp;&nbsp;
+      <a href="#M000013">hyphenate</a>&nbsp;&nbsp;
+      <a href="#M000014">hyphenate!</a>&nbsp;&nbsp;
+      <a href="#M000011">hyphenate_isbn10</a>&nbsp;&nbsp;
+      <a href="#M000012">hyphenate_isbn13</a>&nbsp;&nbsp;
+      <a href="#M000005">is_valid?</a>&nbsp;&nbsp;
+      <a href="#M000003">is_valid_isbn10?</a>&nbsp;&nbsp;
+      <a href="#M000004">is_valid_isbn13?</a>&nbsp;&nbsp;
+      <a href="#M000009">isbn10_to_isbn13</a>&nbsp;&nbsp;
+      <a href="#M000010">isbn13_to_isbn10</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">RNG</td>
+          <td>=</td>
+          <td class="context-item-value">{}</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Supported groups and associated ranges. Data is read from data/ranges.dat
+(provided in gem) at module load.
+
+</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Class methods</h3>
+
+      <div id="method-M000001" class="method-detail">
+        <a name="M000001"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000001.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000001.html');return false;">
+          <span class="method-name">cleanup</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Clear all useless characters from an ISBN number and upcase the
+&#8216;X&#8217; sign when present. Also does the basic check that
+&#8216;X&#8217; must be the last sign of the number, if present. Returns
+nil if provided string is nil or X is not at the last position.
+</p>
+<p>
+No length check is done: no matter what string is passed in, all characters
+that not in the range [0-9xX] are removed.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000002" class="method-detail">
+        <a name="M000002"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000002.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000002.html');return false;">
+          <span class="method-name">cleanup!</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Same as <a href="ISBN_Tools.html#M000001">cleanup</a> but alters the
+argument.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000008" class="method-detail">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000008.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000008.html');return false;">
+          <span class="method-name">compute_check_digit</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Compute the check digit of an ISBN number. Try as an ISBN-10 number first,
+and if it failed, as an ISBN-13 number. Returns the check digit or nil if a
+processing error occured. This method is a helper for <a
+href="ISBN_Tools.html#M000006">compute_isbn10_check_digit</a> and <a
+href="ISBN_Tools.html#M000007">compute_isbn13_check_digit</a>.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000006.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000006.html');return false;">
+          <span class="method-name">compute_isbn10_check_digit</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Computes the check digit of an ISBN-10 number. It will ignore the tenth
+sign if present and accepts a number with only 9 digits. Returns the
+checksum digit or nil. Please note that the checksum digit of an ISBN-10
+may be the character &#8216;X&#8217;.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000007" class="method-detail">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000007.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000007.html');return false;">
+          <span class="method-name">compute_isbn13_check_digit</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Computes the check digit of an ISBN-13 number. It will ignore the
+thirteenth sign if present and accepts a number with only 12 digits.
+Returns the checksum digit or nil. Please note that the checksum digit of
+an ISBN-13 is always in the range [0-9].
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000013.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000013.html');return false;">
+          <span class="method-name">hyphenate</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+This method takes an ISBN then tries to <a
+href="ISBN_Tools.html#M000013">hyphenate</a> it as an ISBN 10 then an ISBN
+13. A bit slower than calling the right one directly but saves you the
+length checking. Returns an hyphenated value or nil.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000014.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000014.html');return false;">
+          <span class="method-name">hyphenate!</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Same as <a href="ISBN_Tools.html#M000013">hyphenate</a>() but alters the
+argument.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000011" class="method-detail">
+        <a name="M000011"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000011.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000011.html');return false;">
+          <span class="method-name">hyphenate_isbn10</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Hyphenate a valid ISBN-10 number. Returns nil if the number is invalid or
+if the group range is unknown. Works only for groups 0,1 and 2.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000012.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000012.html');return false;">
+          <span class="method-name">hyphenate_isbn13</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Hyphenate a valid ISBN-13 number. Returns nil if the number is invalid or
+if the group range is unknown. Works only for groups 0,1 and 2.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000005.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000005.html');return false;">
+          <span class="method-name">is_valid?</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Check that an ISBN is valid or not. Returns true if is, false otherwise.
+This method will first call is_valid_isbn10() and, on failure, try
+is_valid_isbn13(). Returns true if it is a valid number, false otherwise.
+This method is handy if you don&#8216;t want to be bothered by checking the
+length of your isbn before checking its validity. It is a bit slower since
+<a href="ISBN_Tools.html#M000001">cleanup</a> will be called twice.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000003.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000003.html');return false;">
+          <span class="method-name">is_valid_isbn10?</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Check that the value is a valid ISBN-10 number. Returns true if it is,
+false otherwise. The method will check that the number is exactly 10 digits
+long and that the tenth digit is the correct checksum for the number.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000004.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000004.html');return false;">
+          <span class="method-name">is_valid_isbn13?</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Check that the value is a valid ISBN-13 number. Returns true if it is,
+false otherwise. The method will check that the number is exactly 13 digits
+long and that the thirteenth digit is the correct checksum for the number.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000009" class="method-detail">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000009.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000009.html');return false;">
+          <span class="method-name">isbn10_to_isbn13</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Convert an ISBN-10 number to its equivalent ISBN-13 number. Returns the
+converted number or nil if the provided ISBN-10 number is nil or non valid.
+</p>
+        </div>
+      </div>
+
+      <div id="method-M000010" class="method-detail">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+          <a href="ISBN_Tools.src/M000010.html" target="Code" class="method-signature"
+            onclick="popupCode('ISBN_Tools.src/M000010.html');return false;">
+          <span class="method-name">isbn13_to_isbn10</span><span class="method-args">(isbn_)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Convert an ISBN-13 number to its equivalent ISBN-10 number. Returns the
+converted number or nil if the provided ISBN-13 number is nil or non valid.
+Please note that only ISBN-13 numbers starting with 978 can be converted.
+</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: A hack to make both this class and its instances respond to this message since Ruby doesn't support static methods.
+full_name: OpenID::Yadis::BasicServiceEndpoint#from_basic_service_endpoint
+is_singleton: false
+name: from_basic_service_endpoint
+params: (endpoint)
+visibility: public

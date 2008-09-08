@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Put a Association object into storage. When implementing a store, don't assume that there are any limitations on the character set of the server_url. In particular, expect to see unescaped non-url-safe characters in the server_url field.
+full_name: OpenID::Store::Interface#store_association
+is_singleton: false
+name: store_association
+params: (server_url, association)
+visibility: public

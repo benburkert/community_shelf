@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Set whether this request should be made anonymously. If a request is anonymous, the identifier will not be sent in the request. This is only useful if you are making another kind of request with an extension in this request.
+- !ruby/struct:SM::Flow::P 
+  body: Anonymous requests are not allowed when the request is made with OpenID 1.
+full_name: OpenID::Consumer::CheckIDRequest#anonymous=
+is_singleton: false
+name: anonymous=
+params: (is_anonymous)
+visibility: public

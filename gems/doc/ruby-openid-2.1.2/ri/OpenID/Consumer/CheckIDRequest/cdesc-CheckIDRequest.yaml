@@ -1,0 +1,50 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: anonymous
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: endpoint
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: message
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: return_to_args
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An object that holds the state necessary for generating an OpenID authentication request. This object holds the association with the server and the discovered information with which the request will be made.
+- !ruby/struct:SM::Flow::P 
+  body: It is separate from the consumer because you may wish to add things to the request before sending it on its way to the server. It also has serialization options that let you encode the authentication request as a URL or as a form POST.
+constants: []
+
+full_name: OpenID::Consumer::CheckIDRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: add_extension
+- !ruby/object:RI::MethodSummary 
+  name: add_extension_arg
+- !ruby/object:RI::MethodSummary 
+  name: anonymous=
+- !ruby/object:RI::MethodSummary 
+  name: form_markup
+- !ruby/object:RI::MethodSummary 
+  name: get_message
+- !ruby/object:RI::MethodSummary 
+  name: html_markup
+- !ruby/object:RI::MethodSummary 
+  name: redirect_url
+- !ruby/object:RI::MethodSummary 
+  name: send_redirect?
+name: CheckIDRequest
+superclass: Object

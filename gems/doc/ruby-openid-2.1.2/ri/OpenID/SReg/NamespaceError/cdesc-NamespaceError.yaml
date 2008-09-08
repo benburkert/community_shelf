@@ -1,0 +1,21 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: The simple registration namespace was not found and could not be created using the expected name (there's another extension using the name 'sreg')
+- !ruby/struct:SM::Flow::P 
+  body: This is not <em>illegal</em>, for OpenID 2, although it probably indicates a problem, since it's not expected that other extensions will re-use the alias that is in use for OpenID 1.
+- !ruby/struct:SM::Flow::P 
+  body: If this is an OpenID 1 request, then there is no recourse. This should not happen unless some code has modified the namespaces for the message that is being processed.
+constants: []
+
+full_name: OpenID::SReg::NamespaceError
+includes: []
+
+instance_methods: []
+
+name: NamespaceError
+superclass: ArgumentError

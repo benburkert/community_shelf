@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Construct a FetchResponse object from an OpenID library SuccessResponse object.
+full_name: OpenID::AX::FetchResponse::from_success_response
+is_singleton: true
+name: from_success_response
+params: (success_response, signed=true)
+visibility: public

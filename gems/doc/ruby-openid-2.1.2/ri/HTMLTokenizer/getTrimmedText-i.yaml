@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Like getText, but squeeze all whitespace, getting rid of leading and trailing whitespace, and squeezing multiple spaces into a single space.
+full_name: HTMLTokenizer#getTrimmedText
+is_singleton: false
+name: getTrimmedText
+params: (until_tag = nil)
+visibility: public

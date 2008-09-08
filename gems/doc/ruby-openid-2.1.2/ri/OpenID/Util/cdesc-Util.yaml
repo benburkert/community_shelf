@@ -1,0 +1,49 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: append_args
+- !ruby/object:RI::MethodSummary 
+  name: assert
+- !ruby/object:RI::MethodSummary 
+  name: auto_submit_html
+- !ruby/object:RI::MethodSummary 
+  name: dict_to_kv
+- !ruby/object:RI::MethodSummary 
+  name: from_base64
+- !ruby/object:RI::MethodSummary 
+  name: kv_to_dict
+- !ruby/object:RI::MethodSummary 
+  name: kv_to_seq
+- !ruby/object:RI::MethodSummary 
+  name: log
+- !ruby/object:RI::MethodSummary 
+  name: logger
+- !ruby/object:RI::MethodSummary 
+  name: logger=
+- !ruby/object:RI::MethodSummary 
+  name: parse_query
+- !ruby/object:RI::MethodSummary 
+  name: seq_to_kv
+- !ruby/object:RI::MethodSummary 
+  name: to_base64
+- !ruby/object:RI::MethodSummary 
+  name: urlencode
+comment: 
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: BASE64_CHARS
+  value: ('ABCDEFGHIJKLMNOPQRSTUVWXYZ' \                     'abcdefghijklmnopqrstuvwxyz0123456789+/')
+- !ruby/object:RI::Constant 
+  comment: 
+  name: BASE64_RE
+  value: Regexp.compile("     \\A     ([#{BASE64_CHARS}]{4})*     ([#{BASE64_CHARS}]{2}==|      [#{BASE64_CHARS}]{3}=)?     \\Z", Regexp::EXTENDED)
+full_name: OpenID::Util
+includes: []
+
+instance_methods: []
+
+name: Util
+superclass: 

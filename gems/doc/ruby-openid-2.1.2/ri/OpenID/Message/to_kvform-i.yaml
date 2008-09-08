@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generate a KVForm string that contains the parameters in this message. This will fail is the message contains arguments outside of the &quot;openid.&quot; prefix.
+full_name: OpenID::Message#to_kvform
+is_singleton: false
+name: to_kvform
+params: ()
+visibility: public

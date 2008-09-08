@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer#complete_id_res
+is_singleton: false
+name: complete_id_res
+params: (message, current_url)
+visibility: protected

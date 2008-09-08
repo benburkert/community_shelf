@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::OpenIDResponse#add_extension
+is_singleton: false
+name: add_extension
+params: (extension_response)
+visibility: public

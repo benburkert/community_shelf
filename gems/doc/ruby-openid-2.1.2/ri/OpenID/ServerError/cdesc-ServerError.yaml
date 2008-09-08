@@ -1,0 +1,31 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: error_code
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: error_text
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: message
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: from_message
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Exception that is raised when the server returns a 400 response code to a direct request.
+constants: []
+
+full_name: OpenID::ServerError
+includes: []
+
+instance_methods: []
+
+name: ServerError
+superclass: OpenIDError

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Message#_get_default_namespace
+is_singleton: false
+name: _get_default_namespace
+params: (mystery_alias)
+visibility: public

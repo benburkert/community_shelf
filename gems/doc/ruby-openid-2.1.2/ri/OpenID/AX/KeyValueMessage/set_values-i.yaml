@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Set the values for the given attribute type. This replaces any values that have already been set for this attribute.
+full_name: OpenID::AX::KeyValueMessage#set_values
+is_singleton: false
+name: set_values
+params: (type_uri, values)
+visibility: public

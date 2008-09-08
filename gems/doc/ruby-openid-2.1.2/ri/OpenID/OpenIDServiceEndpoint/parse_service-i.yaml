@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::OpenIDServiceEndpoint#parse_service
+is_singleton: false
+name: parse_service
+params: (yadis_url, uri, type_uris, service_element)
+visibility: public

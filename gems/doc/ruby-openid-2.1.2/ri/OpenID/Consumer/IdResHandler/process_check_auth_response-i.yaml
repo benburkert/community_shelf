@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Process the response message from a check_authentication request, invalidating associations if requested.
+full_name: OpenID::Consumer::IdResHandler#process_check_auth_response
+is_singleton: false
+name: process_check_auth_response
+params: (response)
+visibility: protected

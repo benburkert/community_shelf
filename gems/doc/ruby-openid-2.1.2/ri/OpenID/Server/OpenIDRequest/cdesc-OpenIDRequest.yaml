@@ -1,0 +1,24 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: message
+  rw: RW
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: mode
+  rw: RW
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+constants: []
+
+full_name: OpenID::Server::OpenIDRequest
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: namespace
+name: OpenIDRequest
+superclass: Object

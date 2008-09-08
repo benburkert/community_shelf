@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: op_endpoint is new in library version 2.0.
+full_name: OpenID::Server::Server::new
+is_singleton: true
+name: new
+params: (store, op_endpoint)
+visibility: public

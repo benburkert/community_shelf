@@ -1,0 +1,54 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: host
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: path
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: port
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: proto
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: unparsed
+  rw: R
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: wildcard
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: _build_path
+- !ruby/object:RI::MethodSummary 
+  name: _parse_url
+- !ruby/object:RI::MethodSummary 
+  name: check_sanity
+- !ruby/object:RI::MethodSummary 
+  name: check_url
+- !ruby/object:RI::MethodSummary 
+  name: new
+- !ruby/object:RI::MethodSummary 
+  name: parse
+comment: 
+constants: []
+
+full_name: OpenID::TrustRoot::TrustRoot
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: build_discovery_url
+- !ruby/object:RI::MethodSummary 
+  name: sane?
+- !ruby/object:RI::MethodSummary 
+  name: validate_url
+name: TrustRoot
+superclass: Object

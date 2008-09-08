@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Create an Response object from an OpenID::Consumer::SuccessResponse from consumer.complete If you set the signed_only parameter to false, unsigned data from the id_res message from the server will be processed.
+full_name: OpenID::SReg::Response::from_success_response
+is_singleton: true
+name: from_success_response
+params: (success_response, signed_only = true)
+visibility: public

@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Same as hyphenate() but alters the argument.
+full_name: ISBN_Tools::hyphenate!
+is_singleton: true
+name: hyphenate!
+params: (isbn_)
+visibility: public

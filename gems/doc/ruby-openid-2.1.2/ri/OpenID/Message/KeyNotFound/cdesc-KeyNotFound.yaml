@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raised when key lookup fails
+constants: []
+
+full_name: OpenID::Message::KeyNotFound
+includes: []
+
+instance_methods: []
+
+name: KeyNotFound
+superclass: IndexError

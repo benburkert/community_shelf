@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generate a random number, doing a little extra work to make it more likely that it's suitable for cryptography. If your system doesn't have /dev/urandom then this number is not cryptographically safe. See &lt;http://www.cosine.org/2007/08/07/security-ruby-kernel-rand/&gt; for more information. max is the largest possible value of such a random number, where the result will be less than max.
+full_name: OpenID::CryptUtil::rand
+is_singleton: true
+name: rand
+params: (max)
+visibility: public

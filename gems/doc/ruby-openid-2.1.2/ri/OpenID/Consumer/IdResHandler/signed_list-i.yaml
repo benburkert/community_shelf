@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::IdResHandler#signed_list
+is_singleton: false
+name: signed_list
+params: ()
+visibility: protected

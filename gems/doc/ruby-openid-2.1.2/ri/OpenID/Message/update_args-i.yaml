@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Set multiple key/value pairs in one call.
+full_name: OpenID::Message#update_args
+is_singleton: false
+name: update_args
+params: (namespace, updates)
+visibility: public

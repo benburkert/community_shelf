@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Convert an ISBN-10 number to its equivalent ISBN-13 number. Returns the converted number or nil if the provided ISBN-10 number is nil or non valid.
+full_name: ISBN_Tools::isbn10_to_isbn13
+is_singleton: true
+name: isbn10_to_isbn13
+params: (isbn_)
+visibility: public

@@ -1,0 +1,17 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: []
+
+class_methods: []
+
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raised when there's an assertion in the XRDS that it does not have the authority to make.
+constants: []
+
+full_name: OpenID::Yadis::XRDSFraud
+includes: []
+
+instance_methods: []
+
+name: XRDSFraud
+superclass: XRDSError

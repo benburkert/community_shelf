@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: The number of seconds until this association expires
+full_name: OpenID::Association#expires_in
+is_singleton: false
+name: expires_in
+params: (now=nil)
+visibility: public

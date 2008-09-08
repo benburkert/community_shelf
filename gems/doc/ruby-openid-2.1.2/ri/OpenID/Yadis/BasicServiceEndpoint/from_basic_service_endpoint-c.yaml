@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Trivial transform from a basic endpoint to itself. This method exists to allow BasicServiceEndpoint to be used as a filter.
+- !ruby/struct:SM::Flow::P 
+  body: If you are subclassing this object, re-implement this function.
+full_name: OpenID::Yadis::BasicServiceEndpoint::from_basic_service_endpoint
+is_singleton: true
+name: from_basic_service_endpoint
+params: (endpoint)
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::get_service_endpoints
+is_singleton: true
+name: get_service_endpoints
+params: (input_url, flt=nil)
+visibility: public

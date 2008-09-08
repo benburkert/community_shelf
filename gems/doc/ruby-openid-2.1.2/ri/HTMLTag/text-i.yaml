@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the 'alt' text for a tag, if it exists, or an empty string otherwise
+full_name: HTMLTag#text
+is_singleton: false
+name: text
+params: ()
+visibility: public

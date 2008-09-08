@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: If there is a matching association, remove it from the store and return true, otherwise return false.
+full_name: OpenID::Store::Interface#remove_association
+is_singleton: false
+name: remove_association
+params: (server_url, handle)
+visibility: public

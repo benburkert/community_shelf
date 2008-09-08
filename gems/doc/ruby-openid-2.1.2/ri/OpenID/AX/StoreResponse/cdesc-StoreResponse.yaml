@@ -1,0 +1,31 @@
+--- !ruby/object:RI::ClassDescription 
+attributes: 
+- !ruby/object:RI::Attribute 
+  comment: 
+  name: error_message
+  rw: R
+class_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: new
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: An indication that the store request was processed along with this OpenID transaction.
+constants: 
+- !ruby/object:RI::Constant 
+  comment: 
+  name: SUCCESS_MODE
+  value: "'store_response_success'"
+- !ruby/object:RI::Constant 
+  comment: 
+  name: FAILURE_MODE
+  value: "'store_response_failure'"
+full_name: OpenID::AX::StoreResponse
+includes: []
+
+instance_methods: 
+- !ruby/object:RI::MethodSummary 
+  name: get_extension_args
+- !ruby/object:RI::MethodSummary 
+  name: succeeded?
+name: StoreResponse
+superclass: AXMessage

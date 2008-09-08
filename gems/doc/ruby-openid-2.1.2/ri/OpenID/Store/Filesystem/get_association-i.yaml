@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Retrieve an association
+full_name: OpenID::Store::Filesystem#get_association
+is_singleton: false
+name: get_association
+params: (server_url, handle=nil)
+visibility: public

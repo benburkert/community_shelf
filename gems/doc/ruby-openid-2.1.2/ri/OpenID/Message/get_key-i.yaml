@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the key for a particular namespaced argument
+full_name: OpenID::Message#get_key
+is_singleton: false
+name: get_key
+params: (namespace, ns_key)
+visibility: public

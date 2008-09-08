@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Query this endpoint to see if it has any of the given type URIs. This is useful for implementing other endpoint classes that e.g. need to check for the presence of multiple versions of a single protocol.
+full_name: OpenID::Yadis::BasicServiceEndpoint#match_types
+is_singleton: false
+name: match_types
+params: (type_uris)
+visibility: public

@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::IdResHandler#fetch
+is_singleton: false
+name: fetch
+params: (field, default=NO_DEFAULT)
+visibility: protected

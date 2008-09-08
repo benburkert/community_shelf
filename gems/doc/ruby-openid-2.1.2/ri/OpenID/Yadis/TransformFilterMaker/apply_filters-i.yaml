@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::TransformFilterMaker#apply_filters
+is_singleton: false
+name: apply_filters
+params: (endpoint)
+visibility: public

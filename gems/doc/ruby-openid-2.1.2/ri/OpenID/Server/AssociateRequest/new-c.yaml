@@ -1,0 +1,14 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Construct me.
+- !ruby/struct:SM::Flow::P 
+  body: The session is assigned directly as a class attribute. See my class documentation for its description.
+full_name: OpenID::Server::AssociateRequest::new
+is_singleton: true
+name: new
+params: (session, assoc_type)
+visibility: public

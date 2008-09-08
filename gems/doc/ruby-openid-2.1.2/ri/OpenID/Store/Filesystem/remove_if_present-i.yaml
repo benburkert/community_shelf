@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: remove file if present in filesystem
+full_name: OpenID::Store::Filesystem#remove_if_present
+is_singleton: false
+name: remove_if_present
+params: (filename)
+visibility: protected

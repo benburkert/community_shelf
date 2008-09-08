@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::ProtocolError#to_form_markup
+is_singleton: false
+name: to_form_markup
+params: ()
+visibility: public

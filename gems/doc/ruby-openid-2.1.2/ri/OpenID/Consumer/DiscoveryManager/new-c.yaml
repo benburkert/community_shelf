@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Consumer::DiscoveryManager::new
+is_singleton: true
+name: new
+params: (session, url, session_key_suffix=nil)
+visibility: public

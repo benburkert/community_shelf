@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: aka iterServices in Python
+full_name: OpenID::Yadis::each_service
+is_singleton: true
+name: each_service
+params: (xrds_tree, &block)
+visibility: public

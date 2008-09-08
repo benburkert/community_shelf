@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Invalidates the association with the given handle.
+full_name: OpenID::Server::Signatory#invalidate
+is_singleton: false
+name: invalidate
+params: (assoc_handle, dumb)
+visibility: public

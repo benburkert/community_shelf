@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Get the string arguments that should be added to an OpenID message for this extension.
+full_name: OpenID::Extension#get_extension_args
+is_singleton: false
+name: get_extension_args
+params: ()
+visibility: public

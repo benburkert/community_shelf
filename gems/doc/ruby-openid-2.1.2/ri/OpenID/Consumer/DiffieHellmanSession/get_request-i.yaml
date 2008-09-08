@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Return the query parameters for requesting an association using this Diffie-Hellman association session
+full_name: OpenID::Consumer::DiffieHellmanSession#get_request
+is_singleton: false
+name: get_request
+params: ()
+visibility: public

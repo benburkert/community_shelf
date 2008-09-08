@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generate HTML form markup that contains the values in this message, to be HTTP POSTed as x-www-form-urlencoded UTF-8.
+full_name: OpenID::Message#to_form_markup
+is_singleton: false
+name: to_form_markup
+params: (action_url, form_tag_attrs=nil, submit_text='Continue')
+visibility: public

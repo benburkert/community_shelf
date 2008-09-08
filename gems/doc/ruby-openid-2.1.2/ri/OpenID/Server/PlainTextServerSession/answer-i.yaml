@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Server::PlainTextServerSession#answer
+is_singleton: false
+name: answer
+params: (secret)
+visibility: public

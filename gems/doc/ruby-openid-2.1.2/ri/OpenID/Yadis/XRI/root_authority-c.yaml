@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::XRI::root_authority
+is_singleton: true
+name: root_authority
+params: (xri)
+visibility: public

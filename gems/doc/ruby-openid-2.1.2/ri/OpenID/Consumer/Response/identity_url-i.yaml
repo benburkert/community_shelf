@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: The identity URL that has been authenticated; the Claimed Identifier. See also display_identifier.
+full_name: OpenID::Consumer::Response#identity_url
+is_singleton: false
+name: identity_url
+params: ()
+visibility: public

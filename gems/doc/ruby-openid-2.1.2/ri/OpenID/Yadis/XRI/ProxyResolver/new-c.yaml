@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::XRI::ProxyResolver::new
+is_singleton: true
+name: new
+params: (proxy_url=nil)
+visibility: public

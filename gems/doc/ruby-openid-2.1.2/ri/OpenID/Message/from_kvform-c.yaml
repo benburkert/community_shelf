@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Create a message from a KVForm string
+full_name: OpenID::Message::from_kvform
+is_singleton: true
+name: from_kvform
+params: (kvform_string)
+visibility: public

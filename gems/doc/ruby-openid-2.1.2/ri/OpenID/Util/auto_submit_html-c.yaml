@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Util::auto_submit_html
+is_singleton: true
+name: auto_submit_html
+params: (form, title='OpenID transaction in progress')
+visibility: public

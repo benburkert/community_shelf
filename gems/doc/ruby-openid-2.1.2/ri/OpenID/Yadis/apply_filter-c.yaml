@@ -1,0 +1,10 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+full_name: OpenID::Yadis::apply_filter
+is_singleton: true
+name: apply_filter
+params: (normalized_uri, xrd_data, flt=nil)
+visibility: public

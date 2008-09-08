@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Compute the check digit of an ISBN number. Try as an ISBN-10 number first, and if it failed, as an ISBN-13 number. Returns the check digit or nil if a processing error occured. This method is a helper for compute_isbn10_check_digit and compute_isbn13_check_digit.
+full_name: ISBN_Tools::compute_check_digit
+is_singleton: true
+name: compute_check_digit
+params: (isbn_)
+visibility: public

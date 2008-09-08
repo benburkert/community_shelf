@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Raises ProtocolError if the signature is bad
+full_name: OpenID::Consumer::IdResHandler#check_signature
+is_singleton: false
+name: check_signature
+params: ()
+visibility: protected

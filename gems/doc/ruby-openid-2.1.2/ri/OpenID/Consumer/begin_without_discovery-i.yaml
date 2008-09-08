@@ -1,0 +1,16 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Start OpenID verification without doing OpenID server discovery. This method is used internally by Consumer.begin() after discovery is performed, and exists to provide an interface for library users needing to perform their own discovery.
+- !ruby/struct:SM::Flow::P 
+  body: "service: an OpenID service endpoint descriptor. This object and factories for it are found in the openid/consumer/discovery.rb module."
+- !ruby/struct:SM::Flow::P 
+  body: Returns an OpenID authentication request object.
+full_name: OpenID::Consumer#begin_without_discovery
+is_singleton: false
+name: begin_without_discovery
+params: (service, anonymous)
+visibility: public

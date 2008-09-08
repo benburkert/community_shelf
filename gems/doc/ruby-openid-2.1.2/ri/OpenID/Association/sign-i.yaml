@@ -1,0 +1,12 @@
+--- !ruby/object:RI::MethodDescription 
+aliases: []
+
+block_params: 
+comment: 
+- !ruby/struct:SM::Flow::P 
+  body: Generate a signature for a sequence of [key, value] pairs
+full_name: OpenID::Association#sign
+is_singleton: false
+name: sign
+params: (pairs)
+visibility: public
