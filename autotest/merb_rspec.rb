@@ -27,7 +27,7 @@ class Autotest::MerbRspec < Autotest
       files_matching %r%^spec\/#{m[1]}%
     end
 
-    add_mapping %r%^spec/(spec_helper|shared/.*)\.rb$% do
+    add_mapping %r%^spec/(fixtures|spec_helper|shared/.*)\.rb$% do
       all_specs
     end
 

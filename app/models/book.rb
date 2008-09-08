@@ -17,7 +17,7 @@ class Book
 
   ## Associations
   belongs_to :owner, :class_name => "User"
-  #has n, :reservations
+  has n, :reservations
 
   ## Validations
   validates_present :title, :owner
@@ -25,7 +25,7 @@ class Book
 
   ## Hooks
   before :valid?, :set_timestamp_properties
-  #after :create,  :record_activity
+  after :create,  :record_activity
 
   ## Query Methods
 

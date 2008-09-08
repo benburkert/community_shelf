@@ -23,6 +23,6 @@ User.fixture {{
   :name     => "#{/\w+/.gen.capitalize} #{/\w+/.gen.capitalize}"
 }}
 
-#Reservation.fixture :completed, &completed_reservation
-#Reservation.fixture :overdue, &overdue_reservation
-#Reservation.fixture :checked_out, &checked_out_reservation
+Reservation.fixture :completed, &completed_reservation
+Reservation.fixture :overdue, &overdue_reservation
+Reservation.fixture :checked_out, &checked_out_reservation
