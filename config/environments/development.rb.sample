@@ -1,0 +1,19 @@
+Merb.logger.info("Loaded DEVELOPMENT Environment...")
+Merb::Config.use { |c|
+  c[:exception_details] = true
+  c[:reload_classes] = true
+  c[:reload_time] = 0.5
+  c[:log_auto_flush ] = true
+  c[:ignore_tampered_cookies] = true
+  c[:log_level] = :debug
+
+  c[:session_id_key] = 'community_shelf_dev'
+  c[:session_secret_key]  = '5c1f79f69832b6cfd7b55dc0d6fb38086fdbfcfc'
+  c[:session_store] = 'cookie'
+}
+
+
+Merb::BootLoader.before_app_loads do
+  DataMapper.setup(:default, "sqlite3:" + Merb.root / :tmp / 'community_shelf.db')
+  DataObjects::Sqlite3.logger = DataObjects::Logger.new(Merb.log_file, 0)
+end
