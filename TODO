@@ -4,3 +4,4 @@
 * Work with the new merb-cache.
 * Add a README.
 * Update to use DataMapper's OR querying when it's finished.
+* Update to use the new router when it's ready.

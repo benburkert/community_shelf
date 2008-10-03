@@ -1,3 +1,16 @@
+def random_isbn
+  digits = [9, 7, [8, 9].pick] + 9.of {rand(10)}
+  s = true
+  even = digits.find_all { true if (s = !s) .. (s) }
+  odd = digits.reject { true if (s = !s) .. (s) }
+
+  sum = odd.inject(0) {|s, d| s + d}
+  sum = even.inject(sum) {|s, d| s + d * 3}
+  parity = (10 - (sum % 10)) % 10
+
+  "#{digits.join}#{parity}"
+end
+
 def completed_reservation(attrs = {})
   lambda do
     attrs[:user] = User.pick
