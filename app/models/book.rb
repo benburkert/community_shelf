@@ -10,7 +10,6 @@ class Book
   property :author,           String,   :length => 256
   property :publisher,        String,   :length => 256
   property :notes,            Text
-  property :owner_id,         Integer
 
   ## Plugins
   is :permalink, :title, :length => 60

@@ -13,15 +13,23 @@ Merb.push_path(:lib, Merb.root / :lib)
 # 2. Dependencies configuration.
 
 # General
-require 'isbn/tools'
-require 'openid'
+require 'isbn/tools'    # gem name is 'isbn-tools'
+require 'openid'        # gem name is 'ruby-openid'
 require 'openid/store/filesystem'
 
 # DataMapper
-dependencies 'dm-aggregates', 'dm-is-permalink', 'dm-paginate', 'dm-serializer', 'dm-timestamps', 'dm-types', 'dm-validations'
+dependencies  'dm-aggregates',
+              'dm-is-permalink',
+              'dm-paginate',
+              'dm-serializer',
+              'dm-timestamps',
+              'dm-types',
+              'dm-validations'
 
 # Merb
-dependencies 'merb-action-args', 'merb-assets', "merb_helpers"
+dependencies  'merb-action-args',
+              'merb-assets',
+              'merb_helpers'
 
 # 3. Libraries (ORM, testing tool, etc) you use.
 

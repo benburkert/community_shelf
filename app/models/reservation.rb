@@ -6,8 +6,6 @@ class Reservation
   property :created_at,   DateTime,   :nullable => false
   property :due_at,       DateTime,   :nullable => false
   property :returned_at,  DateTime
-  property :book_id,      Integer
-  property :user_id,      Integer
 
   ## Associations
   belongs_to :user

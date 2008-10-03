@@ -5,7 +5,6 @@ class Activity
   property :id,           Serial
   property :type,         Discriminator
   property :created_at,   DateTime
-  property :user_id,      Integer
 
   ## Associations
   belongs_to :user
@@ -23,9 +22,6 @@ class Activity
 
   class Checkout < Activity
 
-    ## Properties
-    property :reservation_id,    Integer
-
     ## Associations
     belongs_to :reservation
 
@@ -34,9 +30,6 @@ class Activity
   end
 
   class Checkin < Activity
-
-    ## Properties
-    property :reservation_id,   Integer
 
     ## Associations
     belongs_to :reservation
@@ -47,11 +40,17 @@ class Activity
 
   class Submission < Activity
 
-    ## Properties
-    property :book_id,    Integer
-
     ## Associations
     belongs_to :book
+
+    ## Validations
+    validates_present :book
+  end
+
+  class BookReview < Activity
+
+    ## Associations
+    belongs_to :review
 
     ## Validations
     validates_present :book
