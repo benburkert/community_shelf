@@ -61,6 +61,8 @@ class Reservation
     update_attributes(:returned_at => DateTime.now)
   end
 
+  ## Hook Methods
+
   def record_checkout
     Activity::Checkout.create(:reservation => self, :created_at => self.created_at, :user => self.user)
   end

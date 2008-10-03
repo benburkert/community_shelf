@@ -5,10 +5,10 @@ class Book
   property :id,               Serial
   property :isbn,             String,   :length => 13,  :nullable => false
   property :created_at,       DateTime,                 :nullable => false
-  property :short_title,      String,   :length => 50
-  property :long_title,       String,   :length => 200
-  property :author,           String,   :length => 200
-  property :publisher,        String,   :length => 200
+  property :short_title,      String,   :length => 64
+  property :long_title,       String,   :length => 256
+  property :author,           String,   :length => 256
+  property :publisher,        String,   :length => 256
   property :notes,            Text
   property :owner_id,         Integer
 
