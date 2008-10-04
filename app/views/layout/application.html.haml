@@ -1,0 +1,15 @@
+!!! Strict
+%html{ "xml:lang" => "en", :lang => "en", :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }/
+    %title="Community Shelf#{' | ' + @title unless @title.nil?}"
+    =css_include_tag "screen", :media => "screen, projection"
+    =css_include_tag "print", :media => "print"
+    <!--[if IE]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  %body
+    .container
+      .span-24
+        %h1
+          =link_to "Community Shelf", "/"
+        %hr
+      =catch_content :for_layout

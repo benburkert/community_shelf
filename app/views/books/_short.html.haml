@@ -1,0 +1,5 @@
+%a{:href => url(:book, book), :class => :book}
+  %span.title=book.title
+  -unless book.author.blank?
+    by
+    %span.alt=book.author

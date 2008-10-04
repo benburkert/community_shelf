@@ -1,0 +1,23 @@
+%h3.alt Recently Added Books
+%ul
+  -unless Book.added_after(1.day.ago).empty?
+    %li.break
+      %span.alt.break Today
+      %hr
+  -Book.added_after(1.day.ago).each do |book|
+    %li.book
+      =partial 'books/short', :book => book
+  -unless Book.added_after(2.days.ago).added_before(1.day.ago).empty?
+    %li.break
+      %span.alt.break Yesterday
+      %hr
+  -Book.added_after(2.days.ago).added_before(1.day.ago).each do |book|
+    %li.book
+      =partial 'books/short', :book => book
+  -unless Book.added_after(1.week.ago).added_before(2.days.ago).empty?
+    %li.break
+      %span.alt.break Last Week
+      %hr
+  -Book.added_after(1.week.ago).added_before(2.days.ago).each do |book|
+    %li.book
+      =partial 'books/short', :book => book

@@ -5,7 +5,7 @@ Book.fix {{
   :created_at   => (1..100).pick.days.ago,
   :short_title  => (short = /[:sentence:]{3,5}/.gen[0...50]),
   :long_title   => /#{short} (\w+){1,3}/.gen,
-  :author       => "#{/\w+/.gen.capitalize} #{/\w+/.gen.capitalize}",
+  :author       => Randgen.name,
   :publisher    => "#{/\w+/.gen.capitalize} #{/\w+/.gen.capitalize}",
   :notes        => /[:paragraph:]?/.gen,
   :owner => User.pick
@@ -15,7 +15,7 @@ User.fixture {{
   :username => username = /\w+/.gen.downcase,
   :identity => "http://#{username}.example.com",
   :email    => "#{username}@example.com",
-  :name     => "#{/\w+/.gen.capitalize} #{/\w+/.gen.capitalize}"
+  :name     => Randgen.name
 }}
 
 Reservation.fixture :completed, &completed_reservation

@@ -1,0 +1,14 @@
+%h3.alt Recent Activity
+%hr
+%ul
+  -Activity.recent.all(:limit => 20).each do |activity|
+    -if activity.type == Activity::Signup
+      %li.signup="#{activity.user.name} joined Community Shelf."
+    -elsif activity.type == Activity::Checkin
+      %li.checkin="#{activity.user.name} checked in #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book)}."
+    -elsif activity.type == Activity::Checkout
+      %li.checkout="#{activity.user.name} checked out #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book)}."
+    -elsif activity.type == Activity::Submission
+      %li.submission
+        %span.alt=activity.user.name
+        ="added #{link_to activity.book.short_title, url(:book, activity.book)}."
