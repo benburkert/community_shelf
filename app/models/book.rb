@@ -17,6 +17,7 @@ class Book
   ## Associations
   belongs_to :owner, :class_name => "User"
   has n, :reservations
+  has n, :reviews
 
   ## Validations
   validates_present :title, :owner

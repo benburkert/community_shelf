@@ -19,6 +19,9 @@ class Reservation
   after   :create,  :record_checkout
   after   :save,    :record_checkin
 
+  ## Default Scope
+  default_scope(:default).update(:order => [:created_at.desc])
+
   ## Query Methods
 
   def self.checked_out

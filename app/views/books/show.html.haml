@@ -1,0 +1,99 @@
+-unless @message.blank?
+  .span-24
+    %span.message=@message
+
+.span-18
+  %h2
+    =@book.title
+    =form :action => url(:edit_book, @book), :method => :get do
+      =submit "Edit"#, :disabled => session.user.nil?
+  .span-10.prepend-2
+    %h3.author
+      %span.alt By
+      =@book.author
+  .span-5.prepend-1.last
+    %h3 &#9733;&#9733;&#9733;&#9733;&#189;
+  .span-6
+    %h4
+      %span.alt Owner
+  .span-6
+    %h4
+      %span.alt ISBN
+  .span-6.last
+    %h4
+      %span.alt Publisher
+  .span-6
+    %h4
+      =@book.owner.name
+  .span-6
+    %h4
+      =@book.isbn
+  .span-6.last
+    %h4
+      =@book.publisher
+  .span-18
+    %h3.alt Notes
+  .span-12.prepend-3.postpend-3
+    =@book.notes
+  -unless @book.reviews.empty?
+    .span-18
+      %hr
+      %h3.alt Reviews
+      %hr
+  -@book.reviews.all(:order => [:created_at.desc]).each do |review|
+    .span-18
+      .review
+        %span.score='&#9733;' * review.score
+        %span.alt=review.user.name
+        %hr
+        %p
+          %blockquote=review.body
+  .span-18
+    =error_messages_for @review
+  /.span-18
+  /  %hr    
+  /  -unless session.user.nil?
+  /    =form_for :review, :action => url(:reviews), :class => :review do
+  /      =fieldset :legend => "Add a Review" do
+  /        =select :score, :collection => (1..5).to_a.map {|i| [i, '&#9733;' * i]}
+  /        =text_area :body
+  /        =hidden_field :book, :value => @book.slug
+  /        %br/
+  /        =submit "Add Review"
+
+.span-6.last
+  %h3
+    -if @book.overdue?
+      %span.alt.red Overdue
+    -if @book.available?
+      %span.alt Available
+    -else
+      %span.alt Checked Out
+  %hr
+  /-if session.user.nil?
+  /  =partial 'sessions/new'
+  /-else
+  /  =form :action => url(:checkout, @book) do
+  /    =submit "Checkout", :disabled => !@book.available?
+  /  =form :action => url(:checkin, @book) do
+  /    =submit "Checkin", :disabled => Reservation.by(session.user).for(@book).checked_out?
+  %hr
+  %h3
+    %span.alt History
+  %hr
+  -Reservation.for(@book).each do |reservation|
+    -unless reservation.returned_at.nil?
+      .span-6.last
+        .span-1
+          %span.alt In
+        .span-3
+          %span.user=reservation.user.short_name
+        .span-2.last
+          %span.date=reservation.returned_at.strftime("%m/%d/%Y")
+    .span-6.last
+      .span-1
+        %span.alt Out
+      .span-3
+        %span.user=reservation.user.short_name
+      .span-2.last
+        %span.date=reservation.created_at.strftime("%m/%d/%Y")
