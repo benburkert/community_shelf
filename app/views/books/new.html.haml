@@ -1,0 +1,17 @@
+-if request.message
+  .span-24
+    %span.message=request.message
+.span-12
+  =form_for :book, :action => url(:new_book), :id => :new_book do
+    =fieldset :legend => "New Book" do
+      #isbn=text_field :isbn, :label => "ISBN: "
+      #short_title=text_field :short_title, :label => "Short Title: "
+      #long_title=text_field :long_title, :label => "Long Title: "
+      #author=text_field :author, :label => "Author(s): "
+      #publisher
+        =text_field :publisher, :label => "Publisher: "
+        =submit "create"
+      #notes=text_area :notes, :label => "Notes: "
+      
+.span-8
+  =error_messages_for @book

@@ -23,8 +23,8 @@ Reservation.fixture :overdue, &overdue_reservation
 Reservation.fixture :checked_out, &checked_out_reservation
 
 Review.fixture {{
-  :body   => /[:paragraph:]/.gen,
-  :score  => (1..10).pick,
-  :book   => (reservation = Reservation.pick(:completed)).book,
-  :user   => reservation.user
+  :body       => /[:paragraph:]/.gen,
+  :score      => (1..5).pick,
+  :book       => (reservation = Reservation.pick(:completed)).book,
+  :user       => reservation.user
 }}

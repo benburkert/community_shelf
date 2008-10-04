@@ -4,13 +4,16 @@ class Activity
   ## Properties
   property :id,           Serial
   property :type,         Discriminator
-  property :created_at,   DateTime
+  property :created_at,   DateTime,       :nullable => false
 
   ## Associations
   belongs_to :user
 
   ## Validations
   validates_present :user
+
+  ## Hooks
+  before :valid?, :set_timestamp_properties
 
   ## Query Methods
 
@@ -53,7 +56,7 @@ class Activity
     belongs_to :review
 
     ## Validations
-    validates_present :book
+    validates_present :review
   end
 
   class Signup < Activity; end

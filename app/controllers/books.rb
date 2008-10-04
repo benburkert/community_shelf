@@ -15,6 +15,20 @@ class Books < Application
     display @book
   end
 
-  class BooksNotFound < NotFound; end
+  def new
+    @book = Book.new
+
+    display @book
+  end
+
+  def isbn_lookup(isbn)
+    isbn = ISBN_Tools.isbn10_to_isbn13(isbn) if isbn.size == 10
+
+    @book = Book.first(:isbn => isbn) || raise(IsbnNotFound, isbn)
+
+    redirect url(:book, @book)
+  end
+
+  class BookNotFound < NotFound; end
   class BooksNotFound < NotFound; end
 end

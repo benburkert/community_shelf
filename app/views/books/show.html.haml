@@ -31,20 +31,22 @@
   .span-6.last
     %h4
       =@book.publisher
-  .span-18
-    %h3.alt Notes
-  .span-12.prepend-3.postpend-3
-    =@book.notes
+  -unless @book.notes.blank?
+    .span-18
+      %h3.alt Notes
+    .span-12.prepend-3.postpend-3
+      =@book.notes
   -unless @book.reviews.empty?
     .span-18
       %hr
       %h3.alt Reviews
       %hr
-  -@book.reviews.all(:order => [:created_at.desc]).each do |review|
+  -@book.reviews.each do |review|
     .span-18
-      .review
+      .review{:id => "review-#{review.id}"}
         %span.score='&#9733;' * review.score
         %span.alt=review.user.name
+        %span.date="(#{time_lost_in_words(DateTime.now, review.created_at)} ago)"
         %hr
         %p
           %blockquote=review.body

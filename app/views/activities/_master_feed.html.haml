@@ -2,13 +2,18 @@
 %hr
 %ul
   -Activity.recent.all(:limit => 20).each do |activity|
-    -if activity.type == Activity::Signup
+    -case activity
+    -when Activity::BookReview
+      %li.review
+        %span.alt=activity.user.name
+        ="added a review for #{link_to activity.review.book.short_title, url(:book, activity.review.book, :review => activity.review)}"
+    -when Activity::Signup
       %li.signup="#{activity.user.name} joined Community Shelf."
-    -elsif activity.type == Activity::Checkin
+    -when Activity::Checkin
       %li.checkin="#{activity.user.name} checked in #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book)}."
-    -elsif activity.type == Activity::Checkout
+    -when Activity::Checkout
       %li.checkout="#{activity.user.name} checked out #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book)}."
-    -elsif activity.type == Activity::Submission
+    -when Activity::Submission
       %li.submission
         %span.alt=activity.user.name
         ="added #{link_to activity.book.short_title, url(:book, activity.book)}."
