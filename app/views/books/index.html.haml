@@ -1,1 +1,24 @@
-You're in index of the Books controller.
+.span-24.last
+  %h2.alt Book List
+.span-22.postpend-2.last
+  %span
+    -('a'..'z').each do |q|
+      =(q == @q) ? q : link_to(q, url(:books, q))
+  %hr
+
+.span-20.prepend-2.postpend-2.last
+  =partial 'books/list', :books => @books
+
+.span-22.postpend-2.last
+  %hr
+  %span
+    -unless @pagination_info[:page] == 1
+      =link_to(:<<, url(:books, @q))
+      =link_to(:<, url(:books, @q, :page => @pagination_info[:page].to_i - 1))
+    
+    -1.upto(@pagination_info[:pages]) do |page|
+      =(page == @pagination_info[:page]) ? page : link_to(page, url(:books, @q, :page => page))
+    
+    -unless @pagination_info[:page] == @pagination_info[:pages]
+      =link_to(:>, url(:books, @q, :page => @pagination_info[:page].to_i + 1))
+      =link_to(:>>, url(:books, @q, :page => @pagination_info[:pages]))
