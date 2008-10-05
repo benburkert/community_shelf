@@ -6,4 +6,6 @@
   .span-7.last
     =partial 'activities/master_feed'
 .span-6.last
-  /=partial 'sessions/short'
+  =partial 'sessions/short'
+  %span.toolbar=link_to "Browse Books", url(:books)
+  %span.toolbar=link_to "Add New Book", url(:books)

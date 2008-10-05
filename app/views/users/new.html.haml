@@ -1,0 +1,13 @@
+.span-10
+  =form_for :user, :action => url(:signup) do
+    =fieldset :legend => "User Registration" do
+      =text_field :username, :label => "Username: "
+      %br/
+      =text_field :name, :label => "Full name: "
+      %br/
+      =text_field :email, :label => "Email: "
+      %br/
+      =hidden_field :identity_url
+      =submit "signup"
+.span-12.right
+  =error_messages_for @user

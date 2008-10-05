@@ -8,14 +8,14 @@ Book.fix {{
   :author       => Randgen.name,
   :publisher    => "#{/\w+/.gen.capitalize} #{/\w+/.gen.capitalize}",
   :notes        => /[:paragraph:]?/.gen,
-  :owner => User.pick
+  :owner        => User.pick
 }}
 
 User.fixture {{
-  :username => username = /\w+/.gen.downcase,
-  :identity => "http://#{username}.example.com",
-  :email    => "#{username}@example.com",
-  :name     => Randgen.name
+  :username     => username = /\w+/.gen.downcase,
+  :identity_url => "http://#{username}.example.com",
+  :email        => "#{username}@example.com",
+  :name         => Randgen.name
 }}
 
 Reservation.fixture :completed, &completed_reservation

@@ -58,6 +58,10 @@ class Book
     reservations.overlapping(*args).empty?
   end
 
+  def stars
+    @stars ||= self.reviews.empty? ? 0.0 :((self.reviews.avg(:score) * 2).round / 2.0)
+  end
+
   ## Custom Validations
 
   def validate_isbn

@@ -56,6 +56,10 @@ class Reservation
     active_in(start_at, end_at) + all(:returned_at => nil, :created_at.lte => start_at)
   end
 
+  def self.books
+    Book.all(:id.in => all.map {|r| r.book.id})
+  end
+
   ## Instance Methods
 
   def checkin

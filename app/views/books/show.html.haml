@@ -12,7 +12,7 @@
       %span.alt By
       =@book.author
   .span-5.prepend-1.last
-    %h3 &#9733;&#9733;&#9733;&#9733;&#189;
+    %h3='&#9733;' * @book.stars + ((@book.stars == @book.stars.to_i) ? '' : '&#189;')
   .span-6
     %h4
       %span.alt Owner
@@ -52,16 +52,16 @@
           %blockquote=review.body
   .span-18
     =error_messages_for @review
-  /.span-18
-  /  %hr    
-  /  -unless session.user.nil?
-  /    =form_for :review, :action => url(:reviews), :class => :review do
-  /      =fieldset :legend => "Add a Review" do
-  /        =select :score, :collection => (1..5).to_a.map {|i| [i, '&#9733;' * i]}
-  /        =text_area :body
-  /        =hidden_field :book, :value => @book.slug
-  /        %br/
-  /        =submit "Add Review"
+  .span-18
+    %hr    
+    -unless session.user.nil?
+      =form_for Review.new, :action => url(:new_review), :class => :review do
+        =fieldset :legend => "Add a Review" do
+          =select :score, :collection => (1..5).map {|i| [i, '&#9733;' * i]}
+          =text_area :body
+          =hidden_field :book, :value => @book.slug
+          %br/
+          =submit "Add Review"
 
 .span-6.last
   %h3
@@ -72,13 +72,13 @@
     -else
       %span.alt Checked Out
   %hr
-  /-if session.user.nil?
-  /  =partial 'sessions/new'
-  /-else
-  /  =form :action => url(:checkout, @book) do
-  /    =submit "Checkout", :disabled => !@book.available?
-  /  =form :action => url(:checkin, @book) do
-  /    =submit "Checkin", :disabled => Reservation.by(session.user).for(@book).checked_out?
+  -if session.user.nil?
+    =partial 'sessions/short'
+  -else
+    =form :action => url(:checkout, @book) do
+      =submit "Checkout", :disabled => !@book.available?
+    =form :action => url(:checkin, @book) do
+      =submit "Checkin", :disabled => (session.user.reservations.checked_out.books.nil? || !session.user.reservations.checked_out.books.include?(@book))
   %hr
   %h3
     %span.alt History

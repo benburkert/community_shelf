@@ -6,14 +6,20 @@
     -when Activity::BookReview
       %li.review
         %span.alt=activity.user.name
-        ="added a review for #{link_to activity.review.book.short_title, url(:book, activity.review.book, :review => activity.review)}"
+        ="added a review for #{link_to activity.review.book.short_title, url(:book, activity.review.book, :review => activity.review), :class => :inline_book}."
     -when Activity::Signup
-      %li.signup="#{activity.user.name} joined Community Shelf."
+      %li.signup
+        %span.alt=activity.user.name
+        ="joined Community Shelf."
     -when Activity::Checkin
-      %li.checkin="#{activity.user.name} checked in #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book)}."
+      %li.checkin
+        %span.alt=activity.user.name
+        ="checked in #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book), :class => :inline_book}."
     -when Activity::Checkout
-      %li.checkout="#{activity.user.name} checked out #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book)}."
+      %li.checkout
+        %span.alt=activity.user.name
+        ="checked out #{link_to activity.reservation.book.short_title, url(:book, activity.reservation.book), :class => :inline_book}."
     -when Activity::Submission
       %li.submission
         %span.alt=activity.user.name
-        ="added #{link_to activity.book.short_title, url(:book, activity.book)}."
+        ="added #{link_to activity.book.short_title, url(:book, activity.book), :class => :inline_book}."

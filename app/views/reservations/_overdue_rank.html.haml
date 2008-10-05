@@ -3,8 +3,8 @@
 -Reservation.overdue.all(:order => [:due_at.asc]).each do |reservation|
   .span-11.last
     .span-3
-      %span=reservation.user.short_name
+      %span.alt=reservation.user.short_name
     .span-5
-      %span.title=link_to reservation.book.short_title, url(:book, reservation.book)
+      %span.title=link_to reservation.book.short_title, url(:book, reservation.book), :class => :inline_book
     .span-3.last
       %span.alt=time_lost_in_words(DateTime.now, reservation.created_at)

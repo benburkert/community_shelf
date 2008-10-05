@@ -200,7 +200,7 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .push-24 {margin:0 -960px 1.5em 960px;}
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float:right;position:relative;}
 .box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9;}
-hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
+hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:none;border:none;}
 hr.space {background:#fff;color:#fff;}
 .clearfix:after, .container:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix, .container {display:inline-block;}
@@ -250,3 +250,6 @@ form.book textarea.notes {width:100%;height:6em;}
 form.book h2 {margin-bottom:0em;}
 
 .review span.score {float:right;}
+
+span.toolbar a {text-decoration:none;font-size:medium;color:#000000;display:block;}
+a.inline_book {text-decoration:none;color:#000000;text-decoration:underline;}

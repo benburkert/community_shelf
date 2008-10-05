@@ -3,7 +3,7 @@ class User
 
   ## Properties
   property :id,               Serial
-  property :identity,         URI,      :length => 256, :nullable => false, :unique => true
+  property :identity_url,     URI,      :length => 256, :nullable => false, :unique => true
   property :username,         String,   :length => 64,  :nullable => false, :unique => true
   property :name,             String,   :length => 256, :nullable => false
   property :email,            String,   :length => 256, :nullable => false, :unique => true
