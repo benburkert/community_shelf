@@ -10,7 +10,7 @@ namespace :dm do
       50.times  { Reservation.gen(:overdue) }
       50.times  { Reservation.gen(:checked_out) }
       500.times { Reservation.gen(:completed) }
-      100.times { Review.gen }
+      500.times { Review.gen }
     end
 
     task :gen => :generate

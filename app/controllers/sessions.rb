@@ -1,5 +1,13 @@
 class Sessions < Application
-  before :ensure_authenticated
+  before :ensure_authenticated, :exclude => :destroy
 
-  def login; end
+  def create
+    redirect url(:dash)
+  end
+
+  def destroy
+    session.abandon!
+
+    redirect url(:dash)
+  end
 end

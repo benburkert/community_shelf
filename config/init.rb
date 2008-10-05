@@ -16,6 +16,8 @@ Merb.push_path(:lib, Merb.root / :lib)
 require 'isbn/tools'    # gem name is 'isbn-tools'
 require 'openid'        # gem name is 'ruby-openid'
 require 'openid/store/filesystem'
+require 'curb'
+require 'xml/libxml'
 
 # DataMapper
 dependencies  'dm-aggregates',

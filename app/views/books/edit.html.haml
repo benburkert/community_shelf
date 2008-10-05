@@ -1,0 +1,73 @@
+.span-18
+  =form_for :book, :action => url(:edit_book, @book), :method => :put, :class => :book do
+    %h2
+      =text_field :short_title, :class => :short_title
+      =submit "Update", :disabled => session.user.nil?
+    .span-18.last
+      =text_field :long_title, :class => :long_title
+    .span-10.prepend-2
+      %h3.author
+        %span.alt By
+        =text_field :author, :class => :author
+    .span-5.prepend-1.last
+      %h3='&#9733;' * @book.stars + ((@book.stars == @book.stars.to_i) ? '' : '&#189;')
+    .span-6
+      %h4
+        %span.alt Owner
+    .span-6
+      %h4
+        %span.alt ISBN
+    .span-6.last
+      %h4
+        %span.alt Publisher
+    .span-6
+      %h4
+        =@book.owner.name
+    .span-6
+      %h4
+        =text_field :isbn
+    .span-6.last
+      %h4
+        =text_field :publisher
+    .span-18
+      %h3.alt Notes
+    .span-15.prepend-2
+      =text_area :notes, :class => :notes
+  .span-18.last
+    =error_messages_for @book
+.span-6.last
+  %h3
+    -if @book.overdue?
+      %span.alt.red Overdue
+    -if @book.available?
+      %span.alt Available
+    -else
+      %span.alt Checked Out
+  %hr
+  -if session.user.nil?
+    =partial 'sessions/short'
+  -else
+    =form :action => url(:checkout, @book) do
+      =submit "Checkout", :disabled => !@book.available?
+    =form :action => url(:checkin, @book) do
+      =submit "Checkin", :disabled => (session.user.reservations.checked_out.books.nil? || !session.user.reservations.checked_out.books.include?(@book))
+  %hr
+  %h3
+    %span.alt History
+  %hr
+  -Reservation.for(@book).each do |reservation|
+    -unless reservation.returned_at.nil?
+      .span-6.last
+        .span-1
+          %span.alt In
+        .span-3
+          %span.user=reservation.user.short_name
+        .span-2.last
+          %span.date=reservation.returned_at.strftime("%m/%d/%Y")
+    .span-6.last
+      .span-1
+        %span.alt Out
+      .span-3
+        %span.user=reservation.user.short_name
+      .span-2.last
+        %span.date=reservation.created_at.strftime("%m/%d/%Y")

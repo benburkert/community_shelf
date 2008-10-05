@@ -18,6 +18,9 @@ class Review
   before :valid?, :set_timestamp_properties
   after :create,  :record_activity
 
+  ## Default Scope
+  default_scope(:default).update(:order => [:created_at.desc])
+
   ## Hook Methods
   def record_activity
     Activity::BookReview.create(:review => self, :user => self.user)

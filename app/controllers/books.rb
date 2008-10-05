@@ -1,11 +1,9 @@
 class Books < Application
-  before :ensure_authenticated, :only => :edit
+  before :ensure_authenticated, :only => [:new, :edit, :update, :checkout, :checkin]
 
   def index(q, page, per_page = 20)
     @q = q
     @books, @pagination_info = Book.by_catalog(q).paginate(page, per_page)
-
-    raise BooksNotFound, q if @pagination_info[:count] == 0
 
     display @books
   end
@@ -22,10 +20,41 @@ class Books < Application
     display @book
   end
 
+  def create(book, submit)
+    case submit.to_sym
+    when :lookup
+      @book = Book.new(ISBNDB.fetch_by_isbn(book[:isbn].gsub(/[^0-9]*/, "")))
+
+      display @book, "books/new"
+    when :create
+      @book = Book.new(book.merge(:owner => session.user))
+
+      if @book.save
+        redirect(url(:new_book), :message => "\"#{@book.short_title}\" has been added")
+      else
+        display @book, "books/new"
+      end
+    end    
+  end
+
   def edit(id)
     @book = Book.first(:slug => id) || raise(BookNotFound, id)
 
     display @book
+  end
+
+  def update(id, book)
+    debugger
+
+    @book = Book.first(:slug => id) || raise(BookNotFound, id)
+
+    @book.update_attributes(book)
+
+    if @book.valid?
+      redirect(url(:book, @book), :message => "\"#{@book.short_title}\" has been updated")
+    else
+      display @book, 'books/edit'
+    end
   end
 
   def isbn_lookup(isbn)

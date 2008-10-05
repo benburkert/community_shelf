@@ -9,7 +9,8 @@ Merb::Router.prepare do
     with(:controller => 'books') do
       match('/book/:isbn', :isbn => /^((?:\d{10})|(?:\d{13}))$/).to(:action => 'isbn_lookup')
 
-      match('/books/:id/edit', :method => :get).to(:action => 'edit').name(:edit_book)
+      match('/books/:id/edit', :method => :put).to(:action => 'update')
+      match('/books/:id/edit').to(:action => 'edit').name(:edit_book)
 
       match('/book/new', :method => 'post').to(:action => 'create')
       match('/book/new').to(:action => 'new').name(:new_book)
@@ -28,8 +29,7 @@ Merb::Router.prepare do
   end
 
   with(:controller => 'sessions') do
-    match('/login/complete').to(:action => 'create').name(:complete_login)
-    match('/login').to(:action => 'login').name(:openid)
+    match('/login').to(:action => 'create').name(:openid)
     match('/logout').to(:action => 'destroy').name(:logout)
   end
 

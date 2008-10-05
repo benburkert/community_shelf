@@ -5,7 +5,7 @@ class Book
   property :id,               Serial
   property :isbn,             String,   :length => 13,  :nullable => false
   property :created_at,       DateTime,                 :nullable => false
-  property :short_title,      String,   :length => 64
+  property :short_title,      String,   :length => 64,  :nullable => false
   property :long_title,       String,   :length => 256
   property :author,           String,   :length => 256
   property :publisher,        String,   :length => 256

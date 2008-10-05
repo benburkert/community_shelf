@@ -1,12 +1,8 @@
--unless @message.blank?
-  .span-24
-    %span.message=@message
-
 .span-18
   %h2
     =@book.title
     =form :action => url(:edit_book, @book), :method => :get do
-      =submit "Edit"#, :disabled => session.user.nil?
+      =submit "Edit", :disabled => session.user.nil?
   .span-10.prepend-2
     %h3.author
       %span.alt By
