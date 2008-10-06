@@ -8,6 +8,8 @@ class Users < Application
     end
   end
 
+  eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+
   def create(user)
     @user = User.new(user)
 

@@ -48,6 +48,8 @@ class Books < Application
     display @book
   end
 
+  eager_cache(:update, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+
   def update(id, book)
     debugger
 
@@ -70,6 +72,8 @@ class Books < Application
     redirect url(:book, @book)
   end
 
+  eager_cache(:checkout, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+
   def checkout(id)
     debugger
     @book = Book.first(:slug => id) || (raise BookNotFound, id)
@@ -80,6 +84,8 @@ class Books < Application
       redirect(url(:book, @book), :message => "Sorry, you cannot checkout #{@book.short_title}")
     end
   end
+
+  eager_cache(:checkin, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def checkin(id)
     @book = Book.first(:slug => id) || (raise BookNotFound, id)

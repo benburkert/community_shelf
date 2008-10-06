@@ -18,7 +18,7 @@ class Reservation
   ## Hooks
   before  :valid?,  :set_timestamp_properties
   after   :create,  :record_checkout
-  after   :save,    :record_checkin
+  after   :update,  :record_checkin
 
   ## Default Scope
   default_scope(:default).update(:order => [:created_at.desc])
@@ -78,6 +78,6 @@ class Reservation
   end
 
   def record_checkin
-    Activity::Checkin.create(:reservation => self, :created_at => self.returned_at, :user => self.user) if self.returned_at.nil?
+    Activity::Checkin.create(:reservation => self, :created_at => self.returned_at, :user => self.user)
   end
 end
