@@ -4,7 +4,8 @@ class Book
   ## Properties
   property :id,               Serial
   property :isbn,             String,   :length => 13,  :nullable => false
-  property :created_at,       DateTime,                 :nullable => false
+  property :created_at,       DateTime,                 :nullable => false, :index => true
+  property :updated_at,       DateTime,                 :nullable => false, :index => true
   property :short_title,      String,   :length => 64,  :nullable => false
   property :long_title,       String,   :length => 256
   property :author,           String,   :length => 256
@@ -42,6 +43,10 @@ class Book
 
   def self.added_before(end_time)
     all(:created_at.lte => end_time, :order => [:created_at.desc])
+  end
+
+  def self.latest
+    first(:order => [:updated_at.desc])
   end
 
   ## Instance Methods

@@ -1,0 +1,13 @@
+.span-18
+  %hr
+  %h3.alt Reviews
+  %hr
+  -@book.reviews.each do |review|
+    .span-18
+      .review{:id => "review-#{review.id}"}
+        %span.score='&#9733;' * review.score
+        %span.alt=review.user.name
+        %span.date="(#{time_lost_in_words(DateTime.now, review.created_at)} ago)"
+        %hr
+        %p
+          %blockquote=review.body

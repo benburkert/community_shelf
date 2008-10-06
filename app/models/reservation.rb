@@ -3,8 +3,9 @@ class Reservation
 
   ## Properties
   property :id,           Serial
-  property :created_at,   DateTime,   :nullable => false
-  property :due_at,       DateTime,   :nullable => false
+  property :created_at,   DateTime,   :nullable => false, :index => true
+  property :updated_at,   DateTime,   :nullable => false, :index => true
+  property :due_at,       DateTime,   :nullable => false, :index => true
   property :returned_at,  DateTime
 
   ## Associations
@@ -58,6 +59,10 @@ class Reservation
 
   def self.books
     Book.all(:id.in => all.map {|r| r.book.id})
+  end
+
+  def self.latest
+    first(:order => [:updated_at.desc])
   end
 
   ## Instance Methods

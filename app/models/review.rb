@@ -4,8 +4,8 @@ class Review
   ## Properties
   property :id,         Serial
   property :body,       Text,     :nullable => false
-  property :created_at, DateTime, :nullable => false
-  property :score,      Integer,  :nullable => false
+  property :created_at, DateTime, :nullable => false, :index => true
+  property :score,      Integer,  :nullable => false, :index => true
 
   ## Associations
   belongs_to :user

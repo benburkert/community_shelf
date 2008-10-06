@@ -22,7 +22,7 @@ class User
     checked_out = false
 
     transaction do
-      checked_out = Reservation.create(:user => self, :book => book, :due_at => due_at).valid? if book.available?
+      checked_out = Reservation.new(:user => self, :book => book, :due_at => due_at).save if book.available?
     end
 
     checked_out

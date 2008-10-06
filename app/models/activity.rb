@@ -4,7 +4,7 @@ class Activity
   ## Properties
   property :id,           Serial
   property :type,         Discriminator
-  property :created_at,   DateTime,       :nullable => false
+  property :created_at,   DateTime,       :nullable => false, :index => true
 
   ## Associations
   belongs_to :user
@@ -19,6 +19,10 @@ class Activity
 
   def self.recent(start_at = 1.week.ago)
     all(:created_at.gte => start_at, :order => [:created_at.desc])
+  end
+
+  def self.latest
+    first(:order => [:created_at.desc])
   end
 
   ## Subclasses

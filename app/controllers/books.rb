@@ -1,7 +1,9 @@
 class Books < Application
   before :ensure_authenticated, :only => [:new, :edit, :update, :checkout, :checkin]
 
-  def index(q, page, per_page = 20)
+  cache :index
+
+  def index(q, page = 1, per_page = 20)
     @q = q
     @books, @pagination_info = Book.by_catalog(q).paginate(page, per_page)
 
@@ -10,6 +12,7 @@ class Books < Application
 
   def show(id)
     @book = Book.first(:slug => id) || raise(BookNotFound, id)
+    @review = Review.new
 
     display @book
   end
@@ -19,6 +22,8 @@ class Books < Application
 
     display @book
   end
+
+  eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def create(book, submit)
     case submit.to_sym
@@ -66,12 +71,13 @@ class Books < Application
   end
 
   def checkout(id)
+    debugger
     @book = Book.first(:slug => id) || (raise BookNotFound, id)
 
     if session.user.checkout(@book)
       redirect(url(:book, @book), :message => "You have successfully checked out \"#{@book.short_title}\"")
     else
-      redirect(url(:book, :@book), :message => "Sorry, you cannot checkout #{@book.short_title}")
+      redirect(url(:book, @book), :message => "Sorry, you cannot checkout #{@book.short_title}")
     end
   end
 

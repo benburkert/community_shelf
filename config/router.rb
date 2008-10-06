@@ -19,7 +19,7 @@ Merb::Router.prepare do
       match('/book/:id/checkout', :method => :post).to(:action => 'checkout').name(:checkout)
 
       match('/book/:id(#review-:review)').to(:action => 'show').name(:book)
-      match('/books(/:q(/:page))').default(:q => 'a', :page => 1).to(:action => 'index').name(:books)
+      match('/books(/:q)').default(:q => 'a').to(:action => 'index').name(:books)
     end
   end
 
