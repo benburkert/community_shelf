@@ -21,14 +21,14 @@ Merb::BootLoader.before_app_loads do
   DataObjects::Sqlite3.logger = Merb.logger
 
 
-  unless defined?(CACHE_SETUP)    # HACK: rake tasks are loading this file twice
-    Merb::Cache.setup do
-      register(:fragment_store, Merb::Cache::FileStore, :dir => Merb.root / :tmp / :fragments)
-      register(:actions, Merb::Cache::FileStore, :dir => Merb.root / :tmp / :actions)
-      register(:page_store, Merb::Cache::PageStore[Merb::Cache::FileStore], :dir => Merb.root / :tmp / :pages)
-      register(:action_store, Merb::Cache::ActionStore[:actions])
-      register(:default, Merb::Cache::AdhocStore[:page_store, :action_store, :fragment_store])
-      CACHE_SETUP = true
-    end
-  end
+  #unless defined?(CACHE_SETUP)    # HACK: rake tasks are loading this file twice
+  #  Merb::Cache.setup do
+  #    register(:fragment_store, Merb::Cache::FileStore, :dir => Merb.root / :tmp / :fragments)
+  #    register(:actions, Merb::Cache::FileStore, :dir => Merb.root / :tmp / :actions)
+  #    register(:page_store, Merb::Cache::PageStore[Merb::Cache::FileStore], :dir => Merb.root / :tmp / :pages)
+  #    register(:action_store, Merb::Cache::ActionStore[:actions])
+  #    register(:default, Merb::Cache::AdhocStore[:page_store, :action_store, :fragment_store])
+  #    CACHE_SETUP = true
+  #  end
+  #end
 end
