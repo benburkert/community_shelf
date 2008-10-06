@@ -4,7 +4,6 @@ class Reviews < Application
   eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def create(review)
-    debugger
     book = Book.first(:slug => review[:book]) || raise(BookNotFound, review[:book])
 
     @review = Review.new(review.merge(:book => book, :user => session.user))

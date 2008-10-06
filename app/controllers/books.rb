@@ -51,8 +51,6 @@ class Books < Application
   eager_cache(:update, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def update(id, book)
-    debugger
-
     @book = Book.first(:slug => id) || raise(BookNotFound, id)
 
     @book.update_attributes(book)
@@ -75,7 +73,6 @@ class Books < Application
   eager_cache(:checkout, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def checkout(id)
-    debugger
     @book = Book.first(:slug => id) || (raise BookNotFound, id)
 
     if session.user.checkout(@book)
