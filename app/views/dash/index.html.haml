@@ -1,10 +1,13 @@
 .span-18
   .span-18.last
-    -fetch_partial 'books/recently_added', :updated_at => (Book.latest.updated_at rescue nil)
+    /-fetch_partial 'books/recently_added', :updated_at => (Book.latest.updated_at rescue nil)
+    =partial 'books/recently_added'
   .span-11
-    -fetch_partial 'reservations/overdue_rank', :updated_at => (Reservation.latest.updated_at rescue nil)
+    /-fetch_partial 'reservations/overdue_rank', :updated_at => (Reservation.latest.updated_at rescue nil)
+    =partial 'reservations/overdue_rank'
   .span-7.last
-    -fetch_partial 'activities/master_feed', :updated_at => (Activity.latest.created_at rescue nil)
+    /-fetch_partial 'activities/master_feed', :updated_at => (Activity.latest.created_at rescue nil)
+    =partial 'activities/master_feed'
 .span-6.last
   =partial 'sessions/short'
   %span.toolbar=link_to "Browse Books", url(:books)

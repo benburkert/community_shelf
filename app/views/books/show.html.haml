@@ -32,7 +32,8 @@
       %h3.alt Notes
     .span-12.prepend-3.postpend-3
       =@book.notes
-  -fetch_partial 'reviews/for_book', :book => @book, :updated_at => (@book.reviews.latest.updated_at rescue nil) unless @book.reviews.empty?
+  /-fetch_partial 'reviews/for_book', :book => @book, :updated_at => (@book.reviews.latest.updated_at rescue nil)
+  =partial 'reviews/for_book' unless @book.reviews.empty?
   .span-18
     =error_messages_for @review
   .span-18

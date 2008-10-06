@@ -1,7 +1,7 @@
 class Reviews < Application
   before :ensure_authenticated
 
-  eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+  #eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def create(review)
     book = Book.first(:slug => review[:book]) || raise(BookNotFound, review[:book])

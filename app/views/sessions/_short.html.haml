@@ -1,5 +1,6 @@
 -unless session.authenticated?
-  -fetch_partial 'sessions/login'
+  /-fetch_partial 'sessions/login'
+  =partial 'sessions/login'
 -else
   %span.logout=link_to "Logout", url(:logout)
   %span.alt Hello

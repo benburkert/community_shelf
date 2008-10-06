@@ -31,7 +31,7 @@ dependencies  'dm-aggregates',
 # Merb
 dependencies  'merb-action-args',
               'merb-assets',
-              'merb-cache',
+              #'merb-cache',
               'merb_helpers',
               'merb_auth-core',
               'merb_auth-more'

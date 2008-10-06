@@ -1,7 +1,7 @@
 class Books < Application
   before :ensure_authenticated, :only => [:new, :edit, :update, :checkout, :checkin]
 
-  cache :index
+  #cache :index
 
   def index(q, page = 1, per_page = 20)
     @q = q
@@ -23,7 +23,7 @@ class Books < Application
     display @book
   end
 
-  eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+  #eager_cache(:create, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def create(book, submit)
     case submit.to_sym
@@ -48,7 +48,7 @@ class Books < Application
     display @book
   end
 
-  eager_cache(:update, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+  #eager_cache(:update, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def update(id, book)
     @book = Book.first(:slug => id) || raise(BookNotFound, id)
@@ -70,7 +70,7 @@ class Books < Application
     redirect url(:book, @book)
   end
 
-  eager_cache(:checkout, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+  #eager_cache(:checkout, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def checkout(id)
     @book = Book.first(:slug => id) || (raise BookNotFound, id)
@@ -82,7 +82,7 @@ class Books < Application
     end
   end
 
-  eager_cache(:checkin, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
+  #eager_cache(:checkin, [Dash, :index], :store => :action_store) { build_request(build_url(:dash)) }
 
   def checkin(id)
     @book = Book.first(:slug => id) || (raise BookNotFound, id)
