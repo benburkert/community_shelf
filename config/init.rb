@@ -33,8 +33,8 @@ dependencies  'merb-action-args',
               'merb-assets',
               'merb-cache',
               'merb_helpers',
-              'merb_auth-core',
-              'merb_auth-more'
+              'merb-auth-core',
+              'merb-auth-more'
 
 # 3. Libraries (ORM, testing tool, etc) you use.
 
@@ -48,8 +48,8 @@ use_template_engine :haml
 
 Merb::BootLoader.after_app_loads do
 
-  require 'merb_auth-more/strategies/abstract_password'   # this looks like an merb_auth bug
-  require 'merb_auth-more/strategies/basic/openid'
+  require 'merb-auth-more/strategies/abstract_password'   # this looks like an merb_auth bug
+  require 'merb-auth-more/strategies/basic/openid'
 
   class Authentication
     def store_user(user)
