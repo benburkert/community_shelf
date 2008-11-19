@@ -1,0 +1,27 @@
+Community Shelf
+
+This simple application serves as a great example of what you can do with merb-cache.
+
+
+Notes
+---------------------------
+
+1. The namespacing on commands for db tasks has changed. If you're experimenting with community_shelf
+having watched the video at http://merbcamp.com/video/burkert.mp4 you'll need to run things differently.
+
+The dm: namespace is no longer used, so commands are now:
+
+...
+rake db:automigrate            # Perform automigration
+rake db:autoupgrade            # Perform non destructive automigration
+rake db:create                 # Create the database
+rake db:database_yaml          # Create a sample database.yml file
+...
+
+Author
+----------------------------
+Ben Burkert
+
+Contributors
+----------------------------
+Jack Dempsey
