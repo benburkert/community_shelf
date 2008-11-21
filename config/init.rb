@@ -51,14 +51,16 @@ Merb::BootLoader.after_app_loads do
   require 'merb-auth-more/strategies/abstract_password'   # this looks like an merb_auth bug
   require 'merb-auth-more/strategies/basic/openid'
 
-  class Authentication
-    def store_user(user)
-      return nil unless user
-      user.id
-    end
-
-    def fetch_user(session_info)
-      User.get(session_info)
-    end
-  end
+  # This should be handled by merb/merb-auth/setup.rb now. Leave in for now in case rollback needed.
+  #
+  # class Authentication
+  #   def store_user(user)
+  #     return nil unless user
+  #     user.id
+  #   end
+  #
+  #   def fetch_user(session_info)
+  #     User.get(session_info)
+  #   end
+  # end
 end
